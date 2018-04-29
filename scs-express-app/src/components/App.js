@@ -54,7 +54,6 @@ class App extends Component {
             </div>
         </header>
         <Switch>
-            <Route exact path="/" component={Welcome} />
             <Route exact path="/welcome" component={Welcome} />
             <Route exact path="/about" component={About} />
             <Route exact path="/chapters" component={Chapters} />
