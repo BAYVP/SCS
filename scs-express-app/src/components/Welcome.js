@@ -34,10 +34,12 @@ class Welcome extends Component {
             <section className="waypoint-tigger xs-section-padding">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 col-lg-6">
+                        <div className="col-md-12 col-lg-8">
                             <div className="md-archive-content">
-                                <div className="md-heading">
-                                    <h2 className="md-line-title">Goals and Objectives</h2>
+                                <div className="xs-heading row xs-mb-60">
+                                    <div className="col-md-9 col-xl-9">
+                                        <h3 className="xs-title">Goals & Objectives</h3>
+                                    </div>
                                 </div>
                                 <h5>Our strategic priorities up to 2018 are:</h5>
                                 <ul className="xs-unorder-list arrow">
@@ -48,7 +50,7 @@ class Welcome extends Component {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-12 col-lg-6 row xs-archive-image">
+                        <div className="col-md-12 col-lg-4 row xs-archive-image">
                             <div className="col-md-12 xs-mb-30">
                                 <img src={archieve} alt="" className="rounded" />
                             </div>
@@ -67,6 +69,7 @@ class Welcome extends Component {
                     <div className="xs-heading row xs-mb-60">
                         <div className="col-md-9 col-xl-9">
                             <h2 className="xs-title">Our activites</h2>
+                        </div>
                         <div className="col-xl-3 col-md-3 xs-btn-wraper">
                             <a href="" className="btn btn-primary">all Causes</a>
                         </div>
@@ -118,8 +121,49 @@ class Welcome extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
+        <section className="waypoint-tigger xs-section-padding">
+		<div className="container">
+			<div className="xs-heading row xs-mb-60">
+				<div className="col-md-9 col-xl-9">
+					<h2 className="xs-title">Haveli hours & Aarti timings</h2>
+				</div>
+			</div>
+			<div className="row">
+				<div className="col-lg-4 col-md-6">
+					<div className="xs-popular-item xs-box-shadow">
+						<div className="xs-item-header">
+							<img src="assets/images/aarti.png" alt="" />
+						</div>
+						<div className="xs-item-content">
+							<ul className="xs-unorder-list arrow">
+									<li><b>Monday-Friday</b> 7:30 pm</li>
+									<li><b>Saturday</b> 6:30 pm</li>
+									<li><b>Sunday</b> 5:30 pm to 6 pm</li>
+									<li><b>Sunday Prasad</b> 5:30 pm</li>
+							</ul>
+							<span className="xs-separetor"></span>
+						</div>
+					</div>
+				</div>
+				<div className="col-lg-4 col-md-6">
+						<div className="xs-popular-item xs-box-shadow">
+							<div className="xs-item-header">
+								<img src="" alt="" />
+							</div>
+							<div className="xs-item-content">
+									<ul className="xs-unorder-list arrow">
+											<li><b>Monday-Saturday</b> 9:00 am to 1:30 pm & 3:00 pm to 8:00 pm</li>
+											(Darshan will be closed from 1.30 pm to 3:00 pm)	
+											<li><b>Sunday</b> 9:00 am to 8:00 pm</li>
+										</ul>
+								<span className="xs-separetor"></span>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
     </div>
     );
   }
