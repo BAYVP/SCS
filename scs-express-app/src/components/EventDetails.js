@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import _ from 'underscore';
-import moment from 'moment';
-
+import {getDateFromStr, getMonthFromDate, getDayFromDate, getEventStartTime, getEventCountDown} from '../utils/datetimeutil';
 
 const url = "http://52.191.119.42:1337"
 class EventDetails  extends Component {
@@ -30,12 +29,14 @@ class EventDetails  extends Component {
         var eventMonth = "";
         var imageUrl = "";
         var startTime = ""
+        var dateCountDownStr = ""
 
         if(!_.isEmpty(this.state.eventDetail.StartDate)) {
-            eventDate = moment(this.state.eventDetail.StartDate).format('YYYY/MM/DD')
-            eventDay =  moment(this.state.eventDetail.StartDate).format('D');
-            eventMonth =  moment(this.state.eventDetail.StartDate).format('MMM');
-            startTime = moment(this.state.eventDetail.StartTime).format("hh:mm a");
+            eventDate = getDateFromStr(this.state.eventDetail.StartDate);
+            eventDay =  getDayFromDate(this.state.eventDetail.StartDate);
+            eventMonth =  getMonthFromDate(this.state.eventDetail.StartDate);
+            startTime = getEventStartTime(this.state.eventDetail.StartTime);
+            dateCountDownStr = getEventCountDown(this.state.eventDetail.StartDate);
         }
         if(!_.isEmpty(this.state.eventDetail.Images)) {
             imageUrl = `${url}/${this.state.eventDetail.Images[0].url}`;
@@ -60,7 +61,7 @@ class EventDetails  extends Component {
                                     <div className="row">
                                         <div className="col-lg-8 xs-event-wraper">
                                             <div className="xs-event-content">
-                                                <h4>Event Detalis</h4>
+                                                <h4>Event Details</h4>
                                                 <p>{this.state.eventDetail.Description}</p>
                                             </div>
                                         </div>
@@ -98,7 +99,10 @@ class EventDetails  extends Component {
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div className="xs-countdown-timer timer-style-2 xs-mb-30" data-countdown={eventDate}></div>
+                                            <div className="xs-countdown-timer timer-style-2 xs-mb-30" data-countdown={eventDate}>
+                                                <span className="timer-count">{dateCountDownStr.split(':')[0]}<span className="timer-title">Days</span></span> 
+                                                <span className="timer-count">{dateCountDownStr.split(':')[1]}<span className="timer-title">Hours</span></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
