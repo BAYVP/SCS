@@ -98,7 +98,11 @@ class EventDetails  extends Component {
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div className="xs-countdown-timer timer-style-2 xs-mb-30" data-countdown={eventDate}></div>
+                                            <div className="xs-countdown-timer timer-style-2 xs-mb-30" data-countdown={eventDate}>
+                                                <span className="timer-count">{moment(eventDate).format('DD')}<span className="timer-title">Days</span></span> 
+                                                <span className="timer-count">{moment(eventDate).format('hh')}<span className="timer-title">Hours</span></span>
+                                                <span className="timer-count">{moment(eventDate).format('mm')}<span className="timer-title">Minutes</span></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

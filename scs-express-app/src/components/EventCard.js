@@ -8,6 +8,17 @@ const url = "http://52.191.119.42:1337"
 
 class EventCard extends Component {
     
+
+    buildEventTimer(eventDate) {
+        return (
+            <div>
+                
+                
+            </div>
+        );
+        
+    }
+
     render(){ 
         var eventDate = ""
         var day = ""
@@ -28,7 +39,8 @@ class EventCard extends Component {
             day =  moment(this.props.event.StartDate).format('D');
             month =  moment(this.props.event.StartDate).format('MMM');
         }
-
+        
+        var eventTimerHtml = this.buildEventTimer(eventDate);
         return (
         <div className="col-lg-6 row xs-single-event event-green">
             <div className="col-md-5">
@@ -51,7 +63,11 @@ class EventCard extends Component {
                                         eventMonth: month
                                     } }}>{this.props.event.Title}</Link>
                     <p>{this.props.event.ShortDescription}</p>
-                    <div className="xs-countdown-timer" data-countdown="2018/05/20"></div>
+                    <div className="xs-countdown-timer" data-countdown="2018/05/20">
+                        <span className="timer-count">{moment(eventDate).format('DD')}<span className="timer-title">Days</span></span> 
+                        <span className="timer-count">{moment(eventDate).format('hh')}<span className="timer-title">Hours</span></span>
+                        <span className="timer-count">{moment(eventDate).format('mm')}<span className="timer-title">Minutes</span></span>
+                    </div>
                     <Link to={{ pathname: `/events/${this.props.event.ID}`}} className="btn btn-primary">Learn More</Link>
                 </div>
             </div>
