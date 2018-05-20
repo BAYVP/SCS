@@ -8,17 +8,6 @@ const url = "http://52.191.119.42:1337"
 
 class EventCard extends Component {
     
-
-    buildEventTimer(eventDate) {
-        return (
-            <div>
-                
-                
-            </div>
-        );
-        
-    }
-
     render(){ 
         var eventDate = ""
         var day = ""
@@ -40,7 +29,6 @@ class EventCard extends Component {
             month =  moment(this.props.event.StartDate).format('MMM');
         }
         
-        var eventTimerHtml = this.buildEventTimer(eventDate);
         return (
         <div className="col-lg-6 row xs-single-event event-green">
             <div className="col-md-5">
