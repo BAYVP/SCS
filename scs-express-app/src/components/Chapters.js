@@ -30,17 +30,7 @@ class About extends Component {
             <section className="xs-content-section-padding">
             <div className="container">
                 <div className="row">
-                    <a href="#svm_section">
-                        <div className="col-md-6 col-lg-4">
-                            <div className="xs-single-causes">
-                                <img src="assets/images/causes/svm-logo.jpg" alt="" />
-                                <div className="xs-causes-footer">
-                                    <h2 className="color-purple"><a>Shreemay Vidya Mandir </a></h2>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                    
                     <div className="col-md-6 col-lg-4">
                         <div className="xs-single-causes">
                             <img src="assets/images/causes/NYS-logo.jpg" alt="" />

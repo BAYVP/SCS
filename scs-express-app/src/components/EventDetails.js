@@ -19,7 +19,7 @@ class EventDetails  extends Component {
 			.then(res => {
 				const eventDetail = res.data[0];
                 this.setState({ eventDetail })
-                //console.log("Event details from strapi: ", this.state.eventDetail);
+                console.log("Event details from strapi: ", this.state.eventDetail);
 			});
 	}
 
@@ -30,19 +30,20 @@ class EventDetails  extends Component {
         var imageUrl = "";
         var startTime = ""
         var dateCountDownStr = ""
-
+        var eventDescription = "";
         if(!_.isEmpty(this.state.eventDetail.StartDate)) {
             eventDate = getDateFromStr(this.state.eventDetail.StartDate);
             eventDay =  getDayFromDate(this.state.eventDetail.StartDate);
             eventMonth =  getMonthFromDate(this.state.eventDetail.StartDate);
             startTime = getEventStartTime(this.state.eventDetail.StartTime);
             dateCountDownStr = getEventCountDown(this.state.eventDetail.StartDate);
+            eventDescription = this.state.eventDetail.Description.split('\n').map((item, i) => <p key={i}>{item}</p>);
         }
         if(!_.isEmpty(this.state.eventDetail.Images)) {
             imageUrl = `${url}/${this.state.eventDetail.Images[0].url}`;
         }
         
-
+    
         return(
             <div>
                 <section className="xs-banner-inner-section parallax-window" style={{backgroundImage: `url(${imageUrl})`}}>
@@ -62,7 +63,7 @@ class EventDetails  extends Component {
                                         <div className="col-lg-8 xs-event-wraper">
                                             <div className="xs-event-content">
                                                 <h4>Event Details</h4>
-                                                <p>{this.state.eventDetail.Description}</p>
+                                                {eventDescription}
                                             </div>
                                         </div>
                                         <div className="col-lg-4">

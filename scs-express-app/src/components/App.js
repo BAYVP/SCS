@@ -2,9 +2,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route , Switch, Link, Redirect} from 'react-router-dom';
 import logo from './images/scs-logo.png';
-// import Welcome from './Welcome';
-// import About from './About';
-// import Chapters from './Chapters';
+import Welcome from './Welcome';
+import About from './About';
+import Chapters from './Chapters';
+import Svm from './Svm';
 import Events from './Events';
 import EventDetails from './EventDetails';
 import Contact from './Contact';
@@ -40,12 +41,16 @@ class App extends Component {
                             </div>
                             <div className="col-lg-7">
                                 <ul className="nav-menu">
+                                <li><Link to="/welcome">Home</Link></li>
                                 <li><Link to="/events">Events</Link></li>
+                                <li><Link to="/svm">Vidya Mandir</Link></li>
+                                <li><Link to="/chapters">Chapters</Link></li>
+                                <li><Link to="/about">About</Link></li>
                                 <li><Link to="/contact">Contact</Link></li>
                                 </ul>
                             </div>
                             <div className="xs-navs-button d-flex-center-end col-lg-3">
-                                <a href="#" className="btn btn-primary">
+                                <a target="_blank" href="https://www.paypal.com/donate/?token=J9jXkViaMtMiYn9YeNWugrk9G1O5IfETzhGats7z0of4U8sxtj4AUeWvi2glkYPLuGgaj0&country.x=US&locale.x=US" className="btn btn-primary">
                                 <span className="badge"><i className="fa fa-heart"></i></span> Donate Now
                                 </a>
                             </div>
@@ -54,9 +59,13 @@ class App extends Component {
                 </div>
             </header>
             <Switch>
-                <Redirect from="/" exact to="/events" />
+                <Redirect from="/" exact to="/welcome" />
+                <Route exact path="/welcome" component={Welcome} />
                 <Route exact path="/events" component={Events} />
+                <Route exact path="/svm" component={Svm} />
                 <Route exact path="/events/:id" component={EventDetails} />
+                <Route exact path="/chapters" component={Chapters} />
+                <Route exact path="/about" component={About} />
                 <Route exact path="/contact" component={Contact} />
             </Switch>
             <Footer />
