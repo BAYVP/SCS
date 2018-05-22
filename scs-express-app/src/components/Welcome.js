@@ -5,6 +5,8 @@ import archieve from './images/archieve.png';
 import archieve2 from './images/archieve_2.png';
 import archieve3 from './images/archieve_3.png';
 import '../index.css';
+import { Link } from "react-router-dom";
+
 
 class Welcome extends Component {
 
@@ -16,18 +18,10 @@ class Welcome extends Component {
                     <div className="xs-welcome-content" style={{backgroundImage: `url(${welcomeImage})`}}>
                         <div className="container">
                             <div className="xs-welcome-wraper color-white">
-                                <h2>Cultivate a "Parivar" that lives, promotes and enhancesVaishnav values and our way of worship</h2>
+                                <h2>Cultivate a "Parivar" that lives, promotes and enhances vaishnav values and our way of worship</h2>
                             </div>
                         </div>
                         <div className="xs-black-overlay"></div>
-                    </div>
-                    <div className="xs-welcome-content" style={{backgroundImage: `url(${welcomeImage2})`}}>
-                        <div className="container">
-                            <div className="xs-welcome-wraper color-white">
-                                <h2>Propagate and understand the life and teachings of Lord Krishna as envisioned by Vallabhacharya Mahaprabhuji in the "Path of Grace- Pushtimarg"</h2>
-                            </div>
-                        </div>
-                    <div className="xs-black-overlay"></div>
                     </div>
                     </div>
             </section>
@@ -70,9 +64,6 @@ class Welcome extends Component {
                         <div className="col-md-9 col-xl-9">
                             <h2 className="xs-title">Our activites</h2>
                         </div>
-                        <div className="col-xl-3 col-md-3 xs-btn-wraper">
-                            <a href="" className="btn btn-primary">all Causes</a>
-                        </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-4 col-md-6">
@@ -112,7 +103,7 @@ class Welcome extends Component {
                                 </div>
                                 <div className="xs-item-content">
                                     <ul className="xs-simple-tag xs-mb-20">
-                                        <li><a href="">Educational</a></li>
+                                        <li><Link to="/svm">Educational</Link></li>
                                     </ul>
                                     <a className="xs-post-title xs-mb-30">Gujarati classes, Bal PushtiVidyalaya, skits / dramas, folk dances,elocutions</a>
                                     <span className="xs-separetor"></span>
