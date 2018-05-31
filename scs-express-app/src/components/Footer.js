@@ -10,7 +10,7 @@ class Footer extends Component {
 					<div className="container">
 						<div className="xs-footer-top-layer">
 							<div className="row">
-								<div className="col-lg-12 col-md-12 footer-widget">
+								<div className="col-lg-6 col-md-6 footer-widget">
 									<h3 className="widget-title">Contact Us</h3>
 									<ul className="xs-info-list">
 										<li><i className="fa fa-home"></i>25 Corning Avenue, Milpitas, CA 95035</li>&nbsp;&nbsp;&nbsp;
@@ -18,7 +18,18 @@ class Footer extends Component {
 										<li><i className="fa fa-envelope-o"></i><a href="mailto:info@bayvp.org">info@bayvp.org</a></li>
 									</ul>
 								</div>
+								<div className="col-lg-6 col-md-6 footer-widget">
+								<div className="xs-feature-box-content">
+								<h3 className="widget-title">Connect with us on social media</h3>
+									<ul className="xs-social-list">
+										<li><a href="https://www.facebook.com/bayvpsvm"><i className="fa fa-facebook"></i></a></li>
+										<li><a href=""><i className="fa fa-twitter"></i></a></li>
+										<li><a href=""><i className="fa fa-google-plus"></i></a></li>
+									</ul>
+								</div>
 							</div>
+							</div>
+							
 						</div>
 					</div>
 					<div className="container">
