@@ -9,6 +9,9 @@ import Svm from './Svm';
 import Events from './Events';
 import EventDetails from './EventDetails';
 import Contact from './Contact';
+//import SvmEnrollmentAndPolicy from './SvmEnrollmentAndPolicy';
+import SvmEvents from './SvmEvents';
+import SvmCurriculam from './SvmCurriculam';
 import Footer from './Footer';
 import '../index.css';
 import $ from 'jquery';
@@ -43,7 +46,12 @@ class App extends Component {
                                 <ul className="nav-menu">
                                 <li><Link to="/welcome">Home</Link></li>
                                 <li><Link to="/events">Events</Link></li>
-                                <li><Link to="/svm">Vidya Mandir</Link></li>
+                                <li><Link to="/svm">Vidya Mandir</Link>
+                                    <ul className="nav-dropdown">
+								        <li><Link to="/svm/curriculm">Curriculm</Link></li>
+                                        <li><Link to="/svm/svmEvents">SVM Events</Link></li>
+                                    </ul>
+                                </li>
                                 <li><Link to="/chapters">Chapters</Link></li>
                                 <li><Link to="/about">About</Link></li>
                                 <li><Link to="/contact">Contact</Link></li>
@@ -63,6 +71,8 @@ class App extends Component {
                 <Route exact path="/welcome" component={Welcome} />
                 <Route exact path="/events" component={Events} />
                 <Route exact path="/svm" component={Svm} />
+                <Route exact path="/svm/curriculm" component={SvmCurriculam} />
+                <Route exact path="/svm/svmEvents" component={SvmEvents} />
                 <Route exact path="/events/:id" component={EventDetails} />
                 <Route exact path="/chapters" component={Chapters} />
                 <Route exact path="/about" component={About} />
