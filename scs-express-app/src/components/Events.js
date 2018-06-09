@@ -6,8 +6,10 @@ import _ from 'underscore';
 import axios from 'axios';
 //import seniorCitizenLogo from './images/SeniorCenter-logo.jpg';
 //import womanEmpowerLogo from './images/woman-empower.jpg';
+import config from '../../config';
 
-const url = "http://52.191.119.42:1337"
+
+const url = config.getStrapiUrl()
 class Events extends Component {
 
 	
@@ -19,22 +21,23 @@ class Events extends Component {
 	}
 
 	componentDidMount() {
+		console.log("Getting events using url=", url)
 		axios.get(`${url}/events?_sort=StartTime:desc`)
 			.then(res => {
 				const events = res.data;
-				// const filteredEvents = _.filter(events, function(event) {
-				// 	var eventStartDate = getEventCountDown(event.StartDate);
-				// 	if (!_.isEmpty(eventStartDate)) {
-				// 		if (eventStartDate.split(":")[0] > 0) {
-				// 			return event;
-				// 		}
-				// 	}
-				// });
-				//console.log("Filtered Events from strapi: ", events)
-				// if (filteredEvents.length > 0) {
-				// 	this.setState({ filteredEvents })
-				// }
-				this.setState({ events });
+				const filteredEvents = _.filter(events, function(event) {
+					var eventStartDate = getEventCountDown(event.StartDate);
+					if (!_.isEmpty(eventStartDate)) {
+						if (eventStartDate.split(":")[0] > 0) {
+							return event;
+						}
+					}
+				});
+				//console.log("Filtered Events from strapi: ", filteredEvents)
+				if (filteredEvents.length > 0) {
+					this.setState({ filteredEvents })
+				}
+				//this.setState({ events });
 			});
 	}
 

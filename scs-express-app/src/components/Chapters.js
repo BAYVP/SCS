@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import chaptersBackgroundImg from './images/volunteer-bg.jpg';
-//import svmLogo from './images/svm-logo.jpg';
+import svmLogo from './images/svm-logo.jpg';
 //import nysLogo from './images/NYS-logo.jpg';
 //import seniorCitizenLogo from './images/SeniorCenter-logo.jpg';
 //import womanEmpowerLogo from './images/woman-empower.jpg';
-
+import { Link } from "react-router-dom";
 
 class About extends Component {
     render(){
@@ -67,31 +67,17 @@ class About extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="svm_section" className="waypoint-tigger xs-section-padding">
-                <div className="container">
-                        <div className="row">
-                            <div className="col-md-12 col-lg-6">
-                                <div className="md-archive-content">
-                                    <div className="md-heading">
-                                        <h2 className="md-line-title">Shreemay Vidya Mandir</h2>
-                                    </div>
-                                    <p>Shreemay Vidya Mandir is the educational wing of "Shreemay Community Services" serving the needs of all generations.  It's goal is to prepare well-balanced, competent, and compassionate citizens from needy socio-economic backgrounds who can be proud of their skills, culture, history and heritage and who can build a brighter future for themselves and for society.</p>
-                                    <h5>Classes Offered 2017-18</h5>
-                                    <ul className="xs-unorder-list arrow">
-                                        <li>Hindi and Gujarati classes</li>
-        
-                                        <li>Create a platform to promote humanitarian, educational, cultural,social and spiritual activities centeredon Hindu culture.</li>
-                                        <li>Teach, commemorate and celebrate various Hindu Vaishnav festivals,rituals, and events (Utsav).</li>
-                                        <li>Promote personal development of youth and children by emphasizing activities that foster the universal values of Vaishnav tradition irrespective of race, caste or religion</li>
-                                    </ul>
-                                </div>
+                    <div className="col-md-6 col-lg-4">
+                        <div className="xs-single-causes">
+                        <Link to="/svm"><img src={svmLogo} alt="" /></Link>
+                            <div className="xs-causes-footer">
+                                <h2 className="color-yellow">Shreemay Vidya Mandir</h2>
+                                <p>Shreemay Vidya Mandir is the educational wing of "Shreemay Community Services" serving the needs of all generations. It's goal is to prepare well-balanced, competent, and compassionate citizens from needy socio-economic backgrounds who can be proud of their skills, culture, history and heritage and who can build a brighter future for themselves and for society.</p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
         </section>
         </main>
         </div>)
