@@ -1,70 +1,81 @@
 "use strict"
-const shell = require("shelljs")
-const fs = require("fs")
-const yargs = require("yargs")
-const logger = require("./logger").logger(module)
+
 const DB_PORT = 9003;
 const SERVER_PORT = 9000;
 const DB_HOSTNAME = 'localhost'; // Default is localhost
 // read args
-const args = yargs
-// Code commented out to bootstrap db with default values
-// .default('e', 'dev')
-// .alias('e', 'env')
-// .alias('b', 'bootstrapDbType')
-//   .argv
-// var env = args.env.toLowerCase()
-// var bootstrapDbType = args.bootstrapDbType
+const pe = process.env.NODE_ENV// eslint-disable-line no-process-env
 
-const pe = process.env // eslint-disable-line no-process-env
-
+  
 function getDbHostname(){
   return DB_HOSTNAME;
 }
 
+function getDbPort(){
+  return DB_PORT;
+}
 
 module.exports = {
   environment: {
-    dev: {
-      port: SERVER_PORT,
+    development: {
       db: {
         username : '',
         password: '',
-        host: getRedisHostname(),
-        port: getRedisPort()
+        host: getDbHostname(),
+        port: getDbPort(),
+      },
+      strapi: {
+        hostUrl:"http://52.191.119.42",
+        port:"1337"
       }
     },
-    prod: {
-        port: SERVER_PORT,
+    test: {
+      db: {
+        username : '',
+        password: '',
+        host: getDbHostname(),
+        port: getDbPort(),
+      },
+      strapi: {
+        hostUrl:"http://52.191.119.42",
+        port:"1337"
+      }
+    },
+    production: {
         db: {
           username : '',
           password: '',
-          host: getRedisHostname(),
-          port: getRedisPort()
+          host: getDbHostname(),
+          port: getDbPort(),
+          strapiServerUrl:""
+        },
+        strapi: {
+          hostUrl:"http://40.71.213.26",
+          port:"1337"
         }
-      },
-    
+    },
   },
-  getProps(){
-    return this.environment[env]
+  getProps: function(){
+    return this.environment[pe]
   },
-  getDbProps(){
-    // Add comment on why you need the below method inspite of tracking
-    // the props above
+  getDbProps: function(){
     return {
       db: {
-        port: this.environment[env].db.port,
-        host: this.environment[env].db.host
+        port: this.getProps().db.port,
+        host: this.getProps().db.host
       }
     }
   },
-  getDbPort(){
+  getStrapiUrl: function(){
+    return this.getProps().strapi.hostUrl + ":" + this.getProps().strapi.port;
+  },
+  getDbPort: function(){
     return DB_PORT;
   },
-  getServerPort(){
+  getServerPort: function(){
     return SERVER_PORT;
   },
-  setEnv(passedEnv){
+  setEnv: function(passedEnv){
     env = passedEnv
   }
 }

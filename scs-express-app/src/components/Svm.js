@@ -47,7 +47,7 @@ class Svm extends Component {
                         <div className="col-md-12 col-lg-8">
                             <div className="md-archive-content">
                                 <div className="xs-heading row xs-mb-60">
-                                    <div className="col-md-9 col-xl-9">
+                                    <div className="col-md-12 col-xl-12">
                                         <h4 className="xs-title">Classes Offered (2017-2018)</h4>
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@ class Svm extends Component {
                     <div className="xs-heading row xs-mb-60">
                         <div className="col-md-9 col-xl-9">
                             <h3 className="xs-title">Enrollment</h3>
-                            <p>Once registered, Follow the steps to make payment online:</p>
+                            <p>Once registered, Follow <b>the steps</b> to make payment online:</p>
                         </div>
                         <div className="col-xl-3 col-md-3 xs-btn-wraper">
                             <a href="http://bayvp.force.com/svm" target="_blank" className="btn btn-primary">Register</a>
@@ -109,7 +109,7 @@ class Svm extends Component {
                     <div className="col-lg-4 col-md-6">
                         <div className="xs-popular-item xs-box-shadow">
                             <div className="xs-item-header">
-                                <img src="assets/images/aarti.png" alt="" />
+                                <img src="assets/images/svm-logo.jpg" alt="" />
                             </div>
                             <div className="xs-item-content">
                                 <ul className="xs-unorder-list arrow">

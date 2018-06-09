@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import welcomeImage from './images/welcome_background.png';
+import welcomeImage from './images/scs_welcome.png';
 import welcomeImage2 from './images/welcome_background_2.png';
 import archieve from './images/archieve.png';
 import archieve2 from './images/archieve_2.png';
@@ -18,7 +18,7 @@ class Welcome extends Component {
                     <div className="xs-welcome-content" style={{backgroundImage: `url(${welcomeImage})`}}>
                         <div className="container">
                             <div className="xs-welcome-wraper color-white">
-                                <h2>Cultivate a "Parivar" that lives, promotes and enhances vaishnav values and our way of worship</h2>
+                                <h2>Create a platform to promote humanitarian, educational, cultural, social and spiritual activities</h2>
                             </div>
                         </div>
                         <div className="xs-black-overlay"></div>
@@ -37,10 +37,10 @@ class Welcome extends Component {
                                 </div>
                                 <h5>Our strategic priorities up to 2018 are:</h5>
                                 <ul className="xs-unorder-list arrow">
-                                    <li>Establish a Haveli and Cultural Center to serve the growing needs of the vaishnav community</li>
-                                    <li>Create a platform to promote humanitarian, educational, cultural,social and spiritual activities centeredon Hindu culture.</li>
-                                    <li>Teach, commemorate and celebrate various Hindu Vaishnav festivals,rituals, and events (Utsav).</li>
-                                    <li>Promote personal development of youth and children by emphasizing activities that foster the universal values of Vaishnav tradition irrespective of race, caste or religion</li>
+                                    <li>Create a platform to promote humanitarian, educational, cultural, social and spiritual activities</li>
+                                    <li>To serve seniors and youth in providing healthy, active and meaningful activities to enrich their lives and so they can be active members in society.</li>
+                                    <li>Promote personal development of youth and children by emphasizing activities that foster the universal values irrespective of race, caste   or religion.</li>
+                                    <li> Service to and opportunities for Seniors and Youth are promoted  steeped in the ideals of “Seva” or Selfless Service.</li>
                                 </ul>
                             </div>
                         </div>

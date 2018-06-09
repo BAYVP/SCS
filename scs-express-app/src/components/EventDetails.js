@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import _ from 'underscore';
+import config from '../../config';
 import {getDateFromStr, getMonthFromDate, getDayFromDate, getEventStartTime, getEventCountDown} from '../utils/datetimeutil';
 
-const url = "http://52.191.119.42:1337"
+const url = config.getStrapiUrl()
 class EventDetails  extends Component {
     constructor(props) {
         super(props);
