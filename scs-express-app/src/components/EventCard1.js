@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const url = "http://52.191.119.42:1337"
 
-class EventCard extends Component {
+class EventCard1 extends Component {
     
     render(){ 
         var eventDate = ""
@@ -21,7 +21,7 @@ class EventCard extends Component {
 
 
         if(!_.isEmpty(this.props.event.Images)) {
-            imageUrl = `${url}${this.props.event.Images.url}`
+            imageUrl = `${url}${this.props.event.Images[0].url}`
         }
         
         if(!_.isEmpty(this.props.event.StartDate)) {
@@ -32,27 +32,22 @@ class EventCard extends Component {
             //dateCountDownStr = getEventCountDown("2018-05-22T18:00:00.000Z");
         }
         
-        const dateCountDownDiv = (dateCountDownStr.split(':')[0] > 0 && dateCountDownStr.split(':')[1] > 0)
-                            ?  <div className="xs-countdown-timer" data-countdown={eventDate}>
-                                    <span className="timer-count">{dateCountDownStr.split(':')[0]}<span className="timer-title">Days</span></span> 
-                                    <span className="timer-count">{dateCountDownStr.split(':')[1]}<span className="timer-title">Hours</span></span>
-                                </div>
-                            : <div></div>
-
         return (
-        <div className="col-lg-6 row xs-single-event event-green">
-            <div className="col-md-5">
-                <div className="xs-event-image">
+            <div className="col-lg-4 col-md-6">
+            <div className="xs-box-shadow xs-single-journal xs-mb-30">
+                <div className="entry-thumbnail ">
                     <img src={imageUrl} alt="" />
-                    <div className="xs-entry-date">
-                        <span className="entry-date-day">{day}</span>
-                        <span className="entry-date-month">{month}</span>
-                    </div>
-                    <div className="xs-black-overlay"></div>
                 </div>
-            </div>
-            <div className="col-md-7">
-                <div className="xs-event-content">
+                <div className="entry-header">
+                    <div className="entry-meta">
+                        <span className="date">
+                            <div  className="entry-date">
+                                {day} {month}
+                            </div>
+                        </span>
+                    </div>
+                    
+                    <h4 className="entry-title">
                     <Link to={{ pathname: `/events/${this.props.event.ID}`,
                                     state: {
                                         event: this.props.event,
@@ -60,13 +55,24 @@ class EventCard extends Component {
                                         eventDay: day,
                                         eventMonth: month
                                     } }}>{this.props.event.Title}</Link>
-                    <p>{this.props.event.ShortDescription}</p>
-                    {dateCountDownDiv}
-                    <Link to={{ pathname: `/events/${this.props.event.ID}`}} className="btn btn-primary">Learn More</Link>
+                    </h4>
+                </div>
+                <div className="xs-event-content">
+                <div className="xs-countdown-timer" data-countdown={eventDate}>
+                        <span className="timer-count">{dateCountDownStr.split(':')[0]}<span className="timer-title">Days</span></span> 
+                        <span className="timer-count">{dateCountDownStr.split(':')[1]}<span className="timer-title">Hours</span></span>
+                </div>
+                </div>
+                <span className="xs-separetor"></span>
+                <div className="post-meta meta-style-color">
+                    <span className="view-link">
+                        <i className="fa fa-eye"></i>
+                        <Link to={{ pathname: `/events/${this.props.event.ID}`}} className="btn btn-primary">Learn More</Link>
+                    </span>
                 </div>
             </div>
         </div>
     )
 }
 }
-  export default EventCard;
+  export default EventCard1;

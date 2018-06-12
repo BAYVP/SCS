@@ -41,9 +41,15 @@ class EventDetails  extends Component {
             eventDescription = this.state.eventDetail.Description.split('\n').map((item, i) => <p key={i}>{item}</p>);
         }
         if(!_.isEmpty(this.state.eventDetail.Images)) {
-            imageUrl = `${url}/${this.state.eventDetail.Images[0].url}`;
+            imageUrl = `${url}/${this.state.eventDetail.Images.url}`;
         }
         
+        const dateCountDownDiv = (dateCountDownStr.split(':')[0] > 0 && dateCountDownStr.split(':')[1] > 0)
+                            ?  <div className="xs-countdown-timer" data-countdown={eventDate}>
+                                    <span className="timer-count">{dateCountDownStr.split(':')[0]}<span className="timer-title">Days</span></span> 
+                                    <span className="timer-count">{dateCountDownStr.split(':')[1]}<span className="timer-title">Hours</span></span>
+                                </div>
+                            : <div></div>
     
         return(
             <div>
@@ -101,10 +107,7 @@ class EventDetails  extends Component {
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div className="xs-countdown-timer timer-style-2 xs-mb-30" data-countdown={eventDate}>
-                                                <span className="timer-count">{dateCountDownStr.split(':')[0]}<span className="timer-title">Days</span></span> 
-                                                <span className="timer-count">{dateCountDownStr.split(':')[1]}<span className="timer-title">Hours</span></span>
-                                            </div>
+                                            {dateCountDownDiv}
                                         </div>
                                     </div>
                                 </div>

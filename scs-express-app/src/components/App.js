@@ -11,7 +11,7 @@ import EventDetails from './EventDetails';
 import Contact from './Contact';
 //import SvmEnrollmentAndPolicy from './SvmEnrollmentAndPolicy';
 import SvmEvents from './SvmEvents';
-import SvmCurriculam from './SvmCurriculam';
+//import SvmCurriculam from './SvmCurriculam';
 import Footer from './Footer';
 import '../index.css';
 import $ from 'jquery';
@@ -48,7 +48,6 @@ class App extends Component {
                                 <li><Link to="/events">Events</Link></li>
                                 <li><Link to="/svm">Vidya Mandir</Link>
                                     <ul className="nav-dropdown">
-								        <li><Link to="/svm/curriculm">Curriculm</Link></li>
                                         <li><Link to="/svm/svmEvents">SVM Events</Link></li>
                                     </ul>
                                 </li>
@@ -58,7 +57,7 @@ class App extends Component {
                                 </ul>
                             </div>
                             <div className="xs-navs-button d-flex-center-end col-lg-3">
-                                <a target="_blank" href="https://www.paypal.com/donate/?token=J9jXkViaMtMiYn9YeNWugrk9G1O5IfETzhGats7z0of4U8sxtj4AUeWvi2glkYPLuGgaj0&country.x=US&locale.x=US" className="btn btn-primary">
+                                <a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N66FMVUXQE65G" className="btn btn-primary">
                                 <span className="badge"><i className="fa fa-heart"></i></span> Donate Now
                                 </a>
                             </div>
@@ -71,7 +70,6 @@ class App extends Component {
                 <Route exact path="/welcome" component={Welcome} />
                 <Route exact path="/events" component={Events} />
                 <Route exact path="/svm" component={Svm} />
-                <Route exact path="/svm/curriculm" component={SvmCurriculam} />
                 <Route exact path="/svm/svmEvents" component={SvmEvents} />
                 <Route exact path="/events/:id" component={EventDetails} />
                 <Route exact path="/chapters" component={Chapters} />

@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import chaptersBackgroundImg from './images/volunteer-bg.jpg';
-import welcomeImage2 from './images/welcome_background_2.png';
-import archieve from './images/archieve.png';
-import archieve2 from './images/archieve_2.png';
-import archieve3 from './images/archieve_3.png';
+import svmBackgroundImg from './images/svm_background.jpg';
 import '../index.css';
 
 class Svm extends Component {
@@ -11,7 +7,7 @@ class Svm extends Component {
   render() {
     return (
         <div>
-            <section className="xs-banner-inner-section parallax-window" style={{backgroundImage: `url(${chaptersBackgroundImg})`}}>
+            <section className="xs-banner-inner-section parallax-window" style={{backgroundImage: `url(${svmBackgroundImg})`}}>
                 <div className="xs-black-overlay"></div>
                     <div className="container">
                         <div className="color-white xs-inner-banner-content">

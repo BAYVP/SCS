@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import contactBackgroundImg from './images/contact_bg.jpg';
-import contactImg from './images/contact-info-img-1.png';
-
 
 class Contact extends Component {
     render(){
@@ -60,19 +58,6 @@ class Contact extends Component {
                             <div className="row">
                                 <div className="col-md-6 col-lg-4">
                                     <div className="xs-contact-details">
-                                        <div className="xs-widnow-wraper">
-                                            <div className="xs-window-top">
-                                                <img src={contactImg} alt="" />
-                                            </div>
-                                            <div className="xs-window-back">
-                                                <div id="xs-multiple-map-1" className="xs-map"></div>
-                                            </div>
-                                            <div className="xs-window-nav">
-                                                <a href="#" className="xs-window-opener">
-                                                    <i className="fa fa-angle-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                         <ul className="xs-unorder-list">
                                             <li><i className="fa fa-phone color-green"></i>+1-408-586-0006</li>
                                             <li><i className="fa fa-envelope-o color-green"></i>info@bayvp.org</li>
