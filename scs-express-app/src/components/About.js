@@ -4,7 +4,7 @@ import team1Img from './images/team_1.png';
 import team2Img from './images/team_2.png';
 import team3Img from './images/team_3.png';
 import team4Img from './images/team_4.png';
-import aboutBackgroundImage from './images/about_img.jpg';
+import aboutBackgroundImage from './images/abt_us_bg.jpg';
 
 class About extends Component {
     render(){
@@ -79,8 +79,6 @@ class About extends Component {
                     <div className="xs-heading row xs-mb-60">
                         <div className="col-md-9 col-xl-9">
                             <h2 className="xs-title">Our Team</h2>
-                            <span className="xs-separetor dashed"></span>
-                            <p>It allows you to gather monthly subscriptions from fans to help fund your creative projects. They also encourage their users to offer rewards to fans as a way to repay them for their support.</p>
                         </div>
                     </div>
                     <div className="row xs-mb-60">
@@ -88,8 +86,8 @@ class About extends Component {
                             <div className="xs-single-team">
                                 <img src={team1Img} alt="" />
                                 <div className="xs-team-content">
-                                    <h4>William Khanna</h4>
-                                    <small>CEO & Founder</small>
+                                    <h4>Shruti Desai</h4>
+                                    <small>Cultural - 4</small>
                                     <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
                                         <path className="fill-red" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
                                     </svg>
@@ -100,8 +98,8 @@ class About extends Component {
                             <div className="xs-single-team">
                                 <img src={team2Img} alt="" />
                                 <div className="xs-team-content">
-                                    <h4>Mr. Aladin</h4>
-                                    <small>General Manager</small>
+                                    <h4>Kanan Mandalia</h4>
+                                    <small>Cultural - 5</small>
                                     <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
                                         <path className="fill-purple" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
                                     </svg>
@@ -112,8 +110,8 @@ class About extends Component {
                             <div className="xs-single-team">
                                 <img src={team3Img} alt="" />
                                 <div className="xs-team-content">
-                                    <h4>Zummon Khan</h4>
-                                    <small>Volunteer</small>
+                                    <h4>Rupali Mehta</h4>
+                                    <small>Cultural - 6/7</small>
                                     <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
                                         <path className="fill-blue" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
                                     </svg>
@@ -124,19 +122,14 @@ class About extends Component {
                             <div className="xs-single-team">
                                 <img src={team4Img} alt="" />
                                 <div className="xs-team-content">
-                                    <h4>Harista Pro</h4>
-                                    <small>Volunteer</small>
+                                    <h4>Trupti Kotecha</h4>
+                                    <small>Cultural - 8</small>
                                     <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
                                         <path className="fill-orange" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
                                     </svg>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="text-center">
-                        <a href="#" className="btn btn-success">
-                            join with us
-                        </a>
                     </div>
                 </div>
             </section>

@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
+    "bootstrap-toggle": "^2.2.2",
     "classnames": "^2.2.5",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
@@ -17,6 +18,7 @@
     "react": "^16.3.2",
     "react-bootstrap-table-next": "^0.1.13",
     "react-dom": "^16.3.2",
+    "react-google-photo": "^0.1.0",
     "react-moment": "^0.7.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
@@ -24,7 +26,9 @@
     "reactstrap": "^6.0.1",
     "underscore": "^1.9.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "titatoggle": "^2.1.2"
+  },
   "scripts": {
     "start": "REACT_APP_ENV=development react-scripts start",
     "test": "REACT_APP_ENV=test react-scripts build",

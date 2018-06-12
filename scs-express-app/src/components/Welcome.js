@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import welcomeImage from './images/scs_welcome.png';
-import welcomeImage2 from './images/welcome_background_2.png';
 import archieve from './images/archieve.png';
 import archieve2 from './images/archieve_2.png';
 import archieve3 from './images/archieve_3.png';
@@ -105,7 +104,7 @@ class Welcome extends Component {
                                     <ul className="xs-simple-tag xs-mb-20">
                                         <li><Link to="/svm">Educational</Link></li>
                                     </ul>
-                                    <a className="xs-post-title xs-mb-30">Gujarati classes, Bal PushtiVidyalaya, skits / dramas, folk dances,elocutions</a>
+                                    <p className="xs-post-title xs-mb-30">Gujarati classes, Bal PushtiVidyalaya, skits / dramas, folk dances,elocutions</p>
                                     <span className="xs-separetor"></span>
                                 </div>
                             </div>
@@ -113,48 +112,7 @@ class Welcome extends Component {
                     </div>
                 </div>
         </section>
-        <section className="waypoint-tigger xs-section-padding">
-		<div className="container">
-			<div className="xs-heading row xs-mb-60">
-				<div className="col-md-9 col-xl-9">
-					<h2 className="xs-title">Haveli hours & Aarti timings</h2>
-				</div>
-			</div>
-			<div className="row">
-				<div className="col-lg-4 col-md-6">
-					<div className="xs-popular-item xs-box-shadow">
-						<div className="xs-item-header">
-							<img src="assets/images/aarti.png" alt="" />
-						</div>
-						<div className="xs-item-content">
-							<ul className="xs-unorder-list arrow">
-									<li><b>Monday-Friday</b> 7:30 pm</li>
-									<li><b>Saturday</b> 6:30 pm</li>
-									<li><b>Sunday</b> 5:30 pm to 6 pm</li>
-									<li><b>Sunday Prasad</b> 5:30 pm</li>
-							</ul>
-							<span className="xs-separetor"></span>
-						</div>
-					</div>
-				</div>
-				<div className="col-lg-4 col-md-6">
-						<div className="xs-popular-item xs-box-shadow">
-							<div className="xs-item-header">
-								<img src="" alt="" />
-							</div>
-							<div className="xs-item-content">
-									<ul className="xs-unorder-list arrow">
-											<li><b>Monday-Saturday</b> 9:00 am to 1:30 pm & 3:00 pm to 8:00 pm</li>
-											(Darshan will be closed from 1.30 pm to 3:00 pm)	
-											<li><b>Sunday</b> 9:00 am to 8:00 pm</li>
-										</ul>
-								<span className="xs-separetor"></span>
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
-	</section>
+        
     </div>
     );
   }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import chaptersBackgroundImg from './images/volunteer-bg.jpg';
+import chaptersBackgroundImg from './images/chapters_background.jpg';
 import svmLogo from './images/svm-logo.jpg';
 //import nysLogo from './images/NYS-logo.jpg';
 //import seniorCitizenLogo from './images/SeniorCenter-logo.jpg';

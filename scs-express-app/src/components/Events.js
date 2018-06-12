@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import EventCard from './EventCard';
-import eventBackgroundImg from './images/event_bg.jpg';
+//import EventCard1 from './EventCard1';
+import eventBackgroundImg from './images/events_bg.jpg';
 import {getEventCountDown} from '../utils/datetimeutil';
 import _ from 'underscore';
 import axios from 'axios';
@@ -8,16 +9,20 @@ import axios from 'axios';
 //import womanEmpowerLogo from './images/woman-empower.jpg';
 import config from '../../config';
 
-
 const url = config.getStrapiUrl()
 class Events extends Component {
 
 	
 	constructor(props) {
 		super(props);
+		
 		this.state = {
-			events: []
+			events: [],
+			pastEvents: [],
+			upcomingEvents: [],
+			isChecked: false
 		};
+    	this.handleChecked = this.handleChecked.bind(this); 
 	}
 
 	componentDidMount() {
@@ -25,7 +30,15 @@ class Events extends Component {
 		axios.get(`${url}/events?_sort=StartTime:desc`)
 			.then(res => {
 				const events = res.data;
-				const filteredEvents = _.filter(events, function(event) {
+				const filteredPastEvents = _.filter(events, function(event) {
+					var eventStartDate = getEventCountDown(event.StartDate);
+					if (!_.isEmpty(eventStartDate)) {
+						if (eventStartDate.split(":")[0] < 0) {
+							return event;
+						}
+					}
+				});
+				const filteredUpcomingEvents = _.filter(events, function(event) {
 					var eventStartDate = getEventCountDown(event.StartDate);
 					if (!_.isEmpty(eventStartDate)) {
 						if (eventStartDate.split(":")[0] > 0) {
@@ -33,19 +46,36 @@ class Events extends Component {
 						}
 					}
 				});
-				//console.log("Filtered Events from strapi: ", filteredEvents)
-				if (filteredEvents.length > 0) {
-					this.setState({ filteredEvents })
-				}
-				//this.setState({ events });
+				
+				this.setState({ 
+					pastEvents: filteredPastEvents,
+					upcomingEvents: filteredUpcomingEvents,
+					events: filteredUpcomingEvents })
 			});
 	}
 
+	handleChecked() {
+		const that = this;
+		if (!that.state.isChecked) {
+			that.setState({
+				isChecked: !that.state.isChecked,
+				events: that.state.pastEvents
+			})
+		} else {
+			that.setState({
+				isChecked: !that.state.isChecked,
+				events: that.state.upcomingEvents
+			})
+		}
+	}
+	  
+
     render(){
+		//console.log("Creating event cards for events", this.state.events)
 		const eventCards = this.state.events.length > 0 ? (
 			this.state.events.map(e => <EventCard  key={e._id} event={e} />)
 		) : (
-			<h2>No upcoming events!!</h2>	
+			<h3>Currently we do not have any events planned!!</h3>	
 		)
         return (
 		
@@ -55,17 +85,29 @@ class Events extends Component {
                     <div className="container">
                         <div className="color-white xs-inner-banner-content">
                             <h2>Events</h2>
-                            <p>Upcoming events at BayVP</p>
+                            <p>Past and upcoming religious and shreemay community events</p>
                         </div>
                 </div>
             </section>
 			<main className="xs-main">
 				<section className="xs-content-section-padding">
 					<div className="container">
+					<div className="xs-heading row xs-mb-60">
+                        <div className="col-md-9 col-xl-9">
+                            <h3 className="xs-title">Events</h3>
+                        </div>
+                        <div className="col-xl-3 col-md-3 ">
+							<span>Show Past Events</span>
+							<div className="custom-switch custom-switch-label-yesno">
+								<input className="custom-switch-input" onChange={this.handleChecked.bind(this)} id="ADD_ID_HERE" type="checkbox"></input>
+								<label className="custom-switch-btn" for="ADD_ID_HERE"></label>
+							</div>
+                        </div>
+                    </div>
 						<div className="row">
 							{eventCards}
 						</div>
-					</div>
+					</div>						
 				</section>
 			</main>
 		</div>
