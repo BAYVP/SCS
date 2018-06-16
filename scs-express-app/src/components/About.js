@@ -4,7 +4,7 @@ import team1Img from './images/team_1.png';
 import team2Img from './images/team_2.png';
 import team3Img from './images/team_3.png';
 import team4Img from './images/team_4.png';
-import aboutBackgroundImage from './images/abt_us_bg.jpg';
+import aboutBackgroundImage from './images/about_bg.png';
 
 class About extends Component {
     render(){

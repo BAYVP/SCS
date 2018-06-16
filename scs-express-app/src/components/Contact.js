@@ -10,7 +10,7 @@ class Contact extends Component {
                     <div className="container">
                         <div className="color-white xs-inner-banner-content">
                             <h2>Contact Us</h2>
-                            <p>General feedback, suggestions about BAYVP/Shreemaya Krishnadham</p>
+                            <p>General feedback, suggestions about Shreemay Community Services</p>
                          </div>
                     </div>
                 </section>
@@ -60,8 +60,8 @@ class Contact extends Component {
                                     <div className="xs-contact-details">
                                         <ul className="xs-unorder-list">
                                             <li><i className="fa fa-phone color-green"></i>+1-408-586-0006</li>
-                                            <li><i className="fa fa-envelope-o color-green"></i>info@bayvp.org</li>
-                                            <li><i className="fa fa-map-marker color-green"></i>25 Cornig Avenue, Milpitas , CA 95035</li>
+                                            <li><i className="fa fa-envelope-o color-green"></i>info@shreemaycommunity.org</li>
+                                            <li><i className="fa fa-map-marker color-green"></i>1530 Meridian Ave, STE 108 San Jose, CA 95125</li>
                                         </ul>
                                     </div>
                                 </div>

@@ -32,15 +32,11 @@ class App extends Component {
                     <nav className="xs-menus">
                         <div className="nav-header">
                             <div className="nav-toggle"></div>
-                            <a href="#" className="nav-logo">
-                                <img src={logo} alt=""/>
-                            </a>
+                            <Link to="/welcome" className="nav-logo"><img src={logo} alt=""/></Link>
                             </div>
                             <div className="nav-menus-wrapper row">
                             <div className="xs-logo-wraper col-lg-2 xs-padding-0">
-                                <a className="nav-brand" href="#">
-                                    <img src={logo} alt=""/>
-                                </a>
+                            <Link to="/welcome" className="nav-brand"><img src={logo} alt=""/></Link>
                             </div>
                             <div className="col-lg-7">
                                 <ul className="nav-menu">
@@ -53,7 +49,6 @@ class App extends Component {
                                 </li>
                                 <li><Link to="/chapters">Chapters</Link></li>
                                 <li><Link to="/about">About</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
                                 </ul>
                             </div>
                             <div className="xs-navs-button d-flex-center-end col-lg-3">
@@ -74,7 +69,7 @@ class App extends Component {
                 <Route exact path="/events/:id" component={EventDetails} />
                 <Route exact path="/chapters" component={Chapters} />
                 <Route exact path="/about" component={About} />
-                <Route exact path="/contact" component={Contact} />
+                
             </Switch>
             <Footer />
             </div>

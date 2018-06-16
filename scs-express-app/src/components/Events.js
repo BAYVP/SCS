@@ -31,18 +31,22 @@ class Events extends Component {
 			.then(res => {
 				const events = res.data;
 				const filteredPastEvents = _.filter(events, function(event) {
-					var eventStartDate = getEventCountDown(event.StartDate);
-					if (!_.isEmpty(eventStartDate)) {
-						if (eventStartDate.split(":")[0] < 0) {
-							return event;
+					if (event.EventType == 'RE') {
+						var eventStartDate = getEventCountDown(event.StartDate);
+						if (!_.isEmpty(eventStartDate)) {
+							if (eventStartDate.split(":")[0] < 0) {
+								return event;
+							}
 						}
 					}
 				});
 				const filteredUpcomingEvents = _.filter(events, function(event) {
-					var eventStartDate = getEventCountDown(event.StartDate);
-					if (!_.isEmpty(eventStartDate)) {
-						if (eventStartDate.split(":")[0] > 0) {
-							return event;
+					if (event.EventType == 'RE') {
+						var eventStartDate = getEventCountDown(event.StartDate);
+						if (!_.isEmpty(eventStartDate)) {
+							if (eventStartDate.split(":")[0] > 0) {
+								return event;
+							}
 						}
 					}
 				});
