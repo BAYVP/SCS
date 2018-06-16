@@ -13,18 +13,17 @@ class Footer extends Component {
 								<div className="col-lg-6 col-md-6 footer-widget">
 									<h3 className="widget-title">Contact Us</h3>
 									<ul className="xs-info-list">
-										<li><i className="fa fa-home"></i>25 Corning Avenue, Milpitas, CA 95035</li>&nbsp;&nbsp;&nbsp;
+										<li><i className="fa fa-home"></i>1530 Meridian Ave, STE 108 San Jose, CA 95125</li>&nbsp;&nbsp;&nbsp;
 										<li><i className="fa fa-phone"></i>(408)-586-0006</li>&nbsp;&nbsp;&nbsp;
-										<li><i className="fa fa-envelope-o"></i><a href="mailto:info@bayvp.org">info@bayvp.org</a></li>
+										<li><i className="fa fa-envelope-o"></i><a href="mailto:info@bayvp.org">info@shreemaycommunity.org</a></li>
 									</ul>
 								</div>
 								<div className="col-lg-6 col-md-6 footer-widget">
 								<div className="xs-feature-box-content">
 								<h3 className="widget-title">Connect with us on social media</h3>
 									<ul className="xs-social-list">
-										<li><a href="https://www.facebook.com/bayvpsvm"><i className="fa fa-facebook"></i></a></li>
-										<li><a href=""><i className="fa fa-twitter"></i></a></li>
-										<li><a href=""><i className="fa fa-google-plus"></i></a></li>
+										<li><a href="https://www.facebook.com/bayvpsvm" target="_blank"><i className="fa fa-facebook"></i></a></li>
+										<li><a href="" target="_blank"><i className="fa fa-google-plus"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -37,7 +36,7 @@ class Footer extends Component {
 							<div className="row">
 								<div className="col-md-6">
 									<div className="xs-copyright-text">
-										<p>&copy; Copyright © 2018 Shreemaya Krishnadham – BAYVP - All Rights Reserved </p>
+										<p>&copy; Copyright © 2018 Shreemay Community Services - All Rights Reserved </p>
 									</div>
 								</div>
 							</div>
