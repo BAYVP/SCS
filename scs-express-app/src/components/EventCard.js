@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import _ from 'underscore';
 import {getDateFromStr, getMonthFromDate, getDayFromDate, getEventCountDown} from '../utils/datetimeutil';
 import { Link } from "react-router-dom";
+import config from '../../config';
 
-
-const url = "http://52.191.119.42:1337"
-
+const url = config.getStrapiUrl()
 class EventCard extends Component {
     
     render(){ 
