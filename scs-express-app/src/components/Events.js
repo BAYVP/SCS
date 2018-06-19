@@ -32,7 +32,7 @@ class Events extends Component {
 				const events = res.data;
 				console.log(events);
 				const filteredPastEvents = _.filter(events, function(event) {
-					if (event.EventType == 'RE') {
+					if (event.EventType === 'RE') {
 						var eventStartDate = getEventCountDown(event.StartDate);
 						if (!_.isEmpty(eventStartDate)) {
 							if (eventStartDate.split(":")[0] < 0) {
@@ -42,7 +42,7 @@ class Events extends Component {
 					}
 				});
 				const filteredUpcomingEvents = _.filter(events, function(event) {
-					if (event.EventType == 'RE') {
+					if (event.EventType === 'RE') {
 						var eventStartDate = getEventCountDown(event.StartDate);
 						if (!_.isEmpty(eventStartDate)) {
 							if (eventStartDate.split(":")[0] > 0) {

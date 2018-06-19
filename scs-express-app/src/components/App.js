@@ -8,7 +8,7 @@ import Chapters from './Chapters';
 import Svm from './Svm';
 import Events from './Events';
 import EventDetails from './EventDetails';
-import Contact from './Contact';
+//import Contact from './Contact';
 //import SvmEnrollmentAndPolicy from './SvmEnrollmentAndPolicy';
 import SvmEvents from './SvmEvents';
 //import SvmCurriculam from './SvmCurriculam';
