@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
 import _ from 'underscore';
-import {getDateFromStr, getMonthFromDate, getDayFromDate, getEventCountDown} from '../utils/datetimeutil';
-import { Link } from "react-router-dom";
-
-
-const url = "http://52.191.119.42:1337"
 
 class SvmEventCard extends Component {
     
     render(){ 
-        var eventDate = ""
-        var day = ""
-        var month = ""
-        var imageUrl = ""
-        var dateCountDownStr = ""
-    
         if(_.isEmpty(this.props.svmEvent.title)) {
             return <div />
         }

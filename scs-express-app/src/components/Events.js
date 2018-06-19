@@ -30,8 +30,9 @@ class Events extends Component {
 		axios.get(`${url}/events?_sort=StartTime:desc`)
 			.then(res => {
 				const events = res.data;
+				console.log(events);
 				const filteredPastEvents = _.filter(events, function(event) {
-					if (event.EventType == 'RE') {
+					if (event.EventType === 'RE') {
 						var eventStartDate = getEventCountDown(event.StartDate);
 						if (!_.isEmpty(eventStartDate)) {
 							if (eventStartDate.split(":")[0] < 0) {
@@ -41,7 +42,7 @@ class Events extends Component {
 					}
 				});
 				const filteredUpcomingEvents = _.filter(events, function(event) {
-					if (event.EventType == 'RE') {
+					if (event.EventType === 'RE') {
 						var eventStartDate = getEventCountDown(event.StartDate);
 						if (!_.isEmpty(eventStartDate)) {
 							if (eventStartDate.split(":")[0] > 0) {
@@ -89,7 +90,7 @@ class Events extends Component {
                     <div className="container">
                         <div className="color-white xs-inner-banner-content">
                             <h2>Events</h2>
-                            <p>Past and upcoming religious and shreemay community events</p>
+                            <p>Past and upcoming shreemay community events</p>
                         </div>
                 </div>
             </section>
@@ -104,7 +105,7 @@ class Events extends Component {
 							<span>Show Past Events</span>
 							<div className="custom-switch custom-switch-label-yesno">
 								<input className="custom-switch-input" onChange={this.handleChecked.bind(this)} id="ADD_ID_HERE" type="checkbox"></input>
-								<label className="custom-switch-btn" for="ADD_ID_HERE"></label>
+								<label className="custom-switch-btn" htmlFor="ADD_ID_HERE"></label>
 							</div>
                         </div>
                     </div>

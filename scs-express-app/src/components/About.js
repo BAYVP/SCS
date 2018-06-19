@@ -41,7 +41,7 @@ class About extends Component {
                         <div className="row">
                             <div className="col-lg-11 content-center">
                                 <div className="xs-heading xs-mb-100 text-center">
-                                    <h2 className="xs-mb-0 xs-title">Bay Area Youth Vaishnav Parivar (BAYVP) is an organization with the purpose of bringing together all Vaishnavs of the bay area</h2>
+                                    <h2 className="xs-mb-0 xs-title">Shreemay Community Services was established in 2009 with the vision to serve the wider community  keeping the neediest , the sick, poor, seniors and youth in mind and promoting activities that contribute to  their well being such as through humanitarian and community  efforts. Over the years Shreemay Community Services has focused on providing concerted and dedicated resources for seniors through Shreemay Senior Center, an education  program through Shreemay Vidya Mandir, and youth volunteer and leadership opportunities through Nikunj Yuva Seva, an educational resource center through the Library and multi-media center called Shreemay Pustak Teerth and humanitarian activities with blood and bone marrow drives, flu clinics, health fairs, food drives etc.</h2>
                                 </div>
                             </div>
                         </div>
@@ -49,15 +49,12 @@ class About extends Component {
                             <div className="col-md-4">
                                 <div className="xs-about-feature">
                                     <h3>Our Mission</h3>
-                                    <p className="lead">We will pursue a better understanding of Dharma, selfless actions (service), worship, justice and morality as propounded in the Gita thereby determining the true value and purpose of life. In the process we hope to participate in the in the uplift of mankind.</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4">
-                                <div className="xs-about-feature">
-                                    <h3>Our Vission</h3>
-                                    <p className="lead">
-                                            BayVp is a volunteer driven organization. Over the past couple of years we have organized various festivals and cultural events including Saptahs, Mahaprabhiji Utsav and Annakut. We also have a yearly picnic in summer for all Vaishnavs and we conduct cultural activities for kids, including weekly Shreemay Vidya Mandir.
-                                            The purpose of the Bay Area Youth Vaishnav Parivar is to propagate and understand the life and teachings of Lord Krishna as envisioned by Vallabhacharaya Mahaprabhuji.</p>
+                                    <ul className="xs-unorder-list play green-icon">
+                                        <li>Create a platform to promote humanitarian, educational, cultural, social and spiritual activities</li>
+                                        <li>To serve seniors and youth in providing healthy, active and meaningful activities to enrich their lives and so they can be active members in society.</li>
+                                        <li>Promote personal development of youth and children by emphasizing activities that foster the universal values irrespective of race, caste   or religion</li>
+                                        <li>Service to and opportunities for Seniors and Youth are promoted  steeped in the ideals of “Seva” or Selfless Service.</li>
+                                    </ul>
                                 </div>
                             </div>
                             <div className="col-md-4">

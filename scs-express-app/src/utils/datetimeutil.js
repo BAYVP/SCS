@@ -38,7 +38,7 @@ export function getEventStartTime(dateStr) {
 
 export function getEventCountDown(dateStr) {
     var eventDate = ""
-    var currentDate = moment().format('MM/DD/YYYY');
+    var currentDate = moment.tz(new Date(),"America/Los_Angeles").format('MM/DD/YYYY');
     var days = "";
     var hours = "";
     if (!_.isEmpty(dateStr)) {
