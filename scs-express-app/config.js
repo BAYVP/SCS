@@ -26,7 +26,7 @@ module.exports = {
       },
       strapi: {
         hostUrl:"http://52.191.119.42",
-        port:"1337"
+        port:"80"
       }
     },
     test: {
@@ -38,7 +38,7 @@ module.exports = {
       },
       strapi: {
         hostUrl:"http://52.191.119.42",
-        port:"1337"
+        port:"80"
       }
     },
     production: {
@@ -51,7 +51,7 @@ module.exports = {
         },
         strapi: {
           hostUrl:"http://40.71.213.26",
-          port:"1337"
+          port:"80"
         }
     },
   },

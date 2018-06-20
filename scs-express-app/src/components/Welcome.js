@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import welcomeImage from './images/scs_welcome.png';
-import archieve from './images/archieve.png';
+import archieve from './images/archieve_4.jpg';
 import archieve2 from './images/archieve_2.png';
 import archieve3 from './images/archieve_3.png';
 import '../index.css';
@@ -68,13 +68,13 @@ class Welcome extends Component {
                         <div className="col-lg-4 col-md-6">
                             <div className="xs-popular-item xs-box-shadow">
                                 <div className="xs-item-header">
-                                    <img src="assets/images/annakut.png" alt="" />
+                                    <img src="assets/images/humanitarian.jpg" alt="" />
                                 </div>
                                 <div className="xs-item-content">
                                     <ul className="xs-simple-tag xs-mb-20">
-                                        <li><a href="">Religious/Spiritual</a></li>
+                                        <li><a href="">humanitarian</a></li>
                                     </ul>
-                                    <p className="xs-post-title xs-mb-60">Annakut, Mahaprabhuji Prakotsav, Janmastmi, Monthly and Ekadashi Satsangs, Spiritualdiscourses by visiting Acharyas,Philosophers, Scholars</p>            
+                                    <p className="xs-post-title xs-mb-60">Humanitarian activities with blood and bone marrow drives, flu clinics, health fairs, food drives etc.</p>            
                                     <span className="xs-separetor"></span>
                                 </div>
                             </div>

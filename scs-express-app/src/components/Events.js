@@ -30,12 +30,14 @@ class Events extends Component {
 		axios.get(`${url}/events?_sort=StartTime:desc`)
 			.then(res => {
 				const events = res.data;
-				console.log(events);
+				//console.log(events);
 				const filteredPastEvents = _.filter(events, function(event) {
 					if (event.EventType === 'RE') {
-						var eventStartDate = getEventCountDown(event.StartDate);
+						//getDaysFromDate(event.StartDate);
+						var eventStartDate = getEventCountDown(event.StartTime);
 						if (!_.isEmpty(eventStartDate)) {
-							if (eventStartDate.split(":")[0] < 0) {
+							if (eventStartDate["days"] < 0) {
+								//console.log("Event start date",eventStartDate);
 								return event;
 							}
 						}
@@ -43,9 +45,10 @@ class Events extends Component {
 				});
 				const filteredUpcomingEvents = _.filter(events, function(event) {
 					if (event.EventType === 'RE') {
-						var eventStartDate = getEventCountDown(event.StartDate);
+						var eventStartDate = getEventCountDown(event.StartTime);
 						if (!_.isEmpty(eventStartDate)) {
-							if (eventStartDate.split(":")[0] > 0) {
+							//console.log("Event start date", eventStartDate)
+							if (eventStartDate["days"] > 0) {
 								return event;
 							}
 						}

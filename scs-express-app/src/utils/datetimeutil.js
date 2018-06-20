@@ -7,7 +7,7 @@ const DAYS = 24;
 export function getDateFromStr(dateStr) {
     var eventDate = ""
     if (!_.isEmpty(dateStr)) {
-        eventDate = moment(dateStr).format('YYYY/MM/DD')
+        eventDate = moment(Date.parse(dateStr.split(".")[0])).format('YYYY/MM/DD')
     }
     return eventDate;
 }
@@ -15,7 +15,7 @@ export function getDateFromStr(dateStr) {
 export function getDayFromDate(dateStr) {
     var eventDay = ""
     if (!_.isEmpty(dateStr)) {
-        eventDay = moment(dateStr).format('D')
+        eventDay = moment(Date.parse(dateStr.split(".")[0])).format('D')
     }
     return eventDay;
 }
@@ -23,7 +23,7 @@ export function getDayFromDate(dateStr) {
 export function getMonthFromDate(dateStr) {
     var eventMonth = ""
     if (!_.isEmpty(dateStr)) {
-        eventMonth = moment(dateStr).format('MMM')
+        eventMonth = moment(Date.parse(dateStr.split(".")[0])).format('MMM')
     }
     return eventMonth;
 }
@@ -31,23 +31,26 @@ export function getMonthFromDate(dateStr) {
 export function getEventStartTime(dateStr) {
     var startTime = ""
     if(!_.isEmpty(dateStr)) {
-        startTime = moment(dateStr).format("hh:mm a");
+        startTime = moment(Date.parse(dateStr.split(".")[0])).format("hh:mm a");
     }
     return startTime;
 }
 
 export function getEventCountDown(dateStr) {
     var eventDate = ""
-    var currentDate = moment.tz(new Date(),"America/Los_Angeles").format('MM/DD/YYYY');
-    var days = "";
+    var totalDays = "";
+    
     var hours = "";
     if (!_.isEmpty(dateStr)) {
-        eventDate = moment(dateStr);
-        var totalHours = eventDate.diff(currentDate, 'hours');
-        days =  Math.round(totalHours/DAYS);
+        eventDate = moment(Date.parse(dateStr.split(".")[0]));
+        var currentDate = moment(new Date());
+        totalDays = eventDate.diff(currentDate, 'd');
+        var totalHours = eventDate.diff(currentDate, 'h');
         hours = totalHours%DAYS;
-        //console.log("** Days=", days );
-        //console.log("** Hours=", hours );
+        //console.log(totalDays + ":" + hours);
     }
-    return days + ":" + hours ;
+    return {
+        "days" : totalDays,
+        "hours": hours
+    }
 }

@@ -15,12 +15,12 @@ class EventDetails  extends Component {
 
     componentDidMount() {
         const eventId = this.props.match.params.id;
-        console.log("*** Event id", this.props.match.params.id)
+       // console.log("*** Event id", this.props.match.params.id)
 		axios.get(`${url}/events?ID=${eventId}`)
 			.then(res => {
 				const eventDetail = res.data[0];
                 this.setState({ eventDetail })
-                console.log("Event details from strapi: ", this.state.eventDetail);
+                //console.log("Event details from strapi: ", this.state.eventDetail);
 			});
 	}
 
@@ -44,10 +44,10 @@ class EventDetails  extends Component {
             imageUrl = `${url}/${this.state.eventDetail.Images.url}`;
         }
         
-        const dateCountDownDiv = (dateCountDownStr.split(':')[0] > 0 && dateCountDownStr.split(':')[1] > 0)
-                            ?  <div className="xs-countdown-timer" data-countdown={eventDate}>
-                                    <span className="timer-count">{dateCountDownStr.split(':')[0]}<span className="timer-title">Days</span></span> 
-                                    <span className="timer-count">{dateCountDownStr.split(':')[1]}<span className="timer-title">Hours</span></span>
+        const dateCountDownDiv = (dateCountDownStr["days"] > 0 && dateCountDownStr["hours"] > 0)
+                            ?  <div className="xs-countdown-timer timer-style-2 xs-mb-30" data-countdown={eventDate}>
+                                    <span className="timer-count">{dateCountDownStr["days"]}<span className="timer-title">Days</span></span> 
+                                    <span className="timer-count">{dateCountDownStr["hours"]}<span className="timer-title">Hours</span></span>
                                 </div>
                             : <div></div>
     

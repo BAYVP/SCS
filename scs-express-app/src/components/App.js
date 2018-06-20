@@ -1,6 +1,6 @@
 // src/components/App/index.js
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route , Switch, Link, Redirect} from 'react-router-dom';
+import { BrowserRouter , Route , Switch, Link, Redirect} from 'react-router-dom';
 import logo from './images/scs-logo.png';
 import Welcome from './Welcome';
 import About from './About';
@@ -25,7 +25,7 @@ class App extends Component {
 
     render() {  
         return (
-            <Router>
+            <BrowserRouter>
             <div>  
             <header className="xs-header header-transparent">
                 <div className="container">
@@ -73,7 +73,7 @@ class App extends Component {
             </Switch>
             <Footer />
             </div>
-            </Router>
+            </BrowserRouter>
         );
     }
 }
