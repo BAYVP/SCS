@@ -31,10 +31,10 @@ class EventCard extends Component {
             //dateCountDownStr = getEventCountDown("2018-05-22T18:00:00.000Z");
         }
         
-        const dateCountDownDiv = (dateCountDownStr.split(':')[0] > 0 && dateCountDownStr.split(':')[1] > 0)
+        const dateCountDownDiv = (dateCountDownStr["days"] > 0 && dateCountDownStr["hours"] > 0)
                             ?  <div className="xs-countdown-timer" data-countdown={eventDate}>
-                                    <span className="timer-count">{dateCountDownStr.split(':')[0]}<span className="timer-title">Days</span></span> 
-                                    <span className="timer-count">{dateCountDownStr.split(':')[1]}<span className="timer-title">Hours</span></span>
+                                    <span className="timer-count">{dateCountDownStr["days"]}<span className="timer-title">Days</span></span> 
+                                    <span className="timer-count">{dateCountDownStr["hours"]}<span className="timer-title">Hours</span></span>
                                 </div>
                             : <div></div>
 

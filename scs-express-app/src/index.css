@@ -2020,7 +2020,7 @@ blockquote span {
   background-position: center right;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../public/assets/images/backgrounds/footer_map.png");
+  /*background-image: url("../public/assets/images/footer_bg.png");*/
 }
 
 .xs-footer-top-layer {
