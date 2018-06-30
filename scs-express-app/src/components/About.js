@@ -79,28 +79,15 @@ class About extends Component {
                 <div className="container">
                     <div className="xs-heading row xs-mb-60">
                         <div className="col-md-9 col-xl-9">
-                            <h2 className="xs-title">Our Team</h2>
+                            <h2 className="xs-title">Board of Directors</h2>
                         </div>
                     </div>
                     <div className="row xs-mb-60">
                         <div className="col-md-6 col-lg-3">
                             <div className="xs-single-team">
-                                <img src={team1Img} alt="" />
-                                <div className="xs-team-content">
-                                    <h4>Shruti Desai</h4>
-                                    <small>Cultural - 4</small>
-                                    <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
-                                        <path className="fill-red" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3">
-                            <div className="xs-single-team">
                                 <img src={team2Img} alt="" />
                                 <div className="xs-team-content">
-                                    <h4>Kanan Mandalia</h4>
-                                    <small>Cultural - 5</small>
+                                    <h4>Dr. Divyang Patel</h4>
                                     <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
                                         <path className="fill-purple" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
                                     </svg>
@@ -111,8 +98,7 @@ class About extends Component {
                             <div className="xs-single-team">
                                 <img src={team3Img} alt="" />
                                 <div className="xs-team-content">
-                                    <h4>Rupali Mehta</h4>
-                                    <small>Cultural - 6/7</small>
+                                    <h4>Nitin Parekh</h4>
                                     <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
                                         <path className="fill-blue" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
                                     </svg>
@@ -123,8 +109,7 @@ class About extends Component {
                             <div className="xs-single-team">
                                 <img src={team4Img} alt="" />
                                 <div className="xs-team-content">
-                                    <h4>Keyura Mehta</h4>
-                                    <small>Cultural - 6</small>
+                                    <h4>Saumil Shah</h4>
                                     <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
                                         <path className="fill-orange" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
                                     </svg>
@@ -135,8 +120,7 @@ class About extends Component {
                             <div className="xs-single-team">
                                 <img src={team5Img} alt="" />
                                 <div className="xs-team-content">
-                                    <h4>Amit Choksi</h4>
-                                    <small>Cultural - 7</small>
+                                    <h4>Subodh Toprani</h4>
                                     <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
                                         <path className="fill-blue" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
                                     </svg>
@@ -147,8 +131,7 @@ class About extends Component {
                             <div className="xs-single-team">
                                 <img src={team6Img} alt="" />
                                 <div className="xs-team-content">
-                                    <h4>Hiten Shah</h4>
-                                    <small>Cultural - 8</small>
+                                    <h4>Manish Patel</h4>
                                     <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
                                         <path className="fill-purple" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
                                     </svg>
@@ -159,46 +142,9 @@ class About extends Component {
                             <div className="xs-single-team">
                                 <img src={team7Img} alt="" />
                                 <div className="xs-team-content">
-                                    <h4>Shefaali Sanghavi</h4>
-                                    <small>Cultural - 9</small>
+                                    <h4>Nitin Matani</h4>
                                     <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
                                         <path className="fill-green" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3">
-                            <div className="xs-single-team">
-                                <img src={team8Img} alt="" />
-                                <div className="xs-team-content">
-                                    <h4>Ruchita Shah</h4>
-                                    <small>Cultural - 10</small>
-                                    <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
-                                        <path className="fill-orange" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3">
-                            <div className="xs-single-team">
-                                <img src={team8Img} alt="" />
-                                <div className="xs-team-content">
-                                    <h4>Vaishali Gandhi</h4>
-                                    <small>Cultural - 11</small>
-                                    <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
-                                        <path className="fill-green" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3">
-                            <div className="xs-single-team">
-                                <img src={team3Img} alt="" />
-                                <div className="xs-team-content">
-                                    <h4>Bhavin Shah</h4>
-                                    <small>Cultural - 12</small>
-                                    <svg className="xs-svgs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 138">
-                                        <path className="fill-blue" d="M375,3294H645v128a10,10,0,0,1-10,10l-250-20a10,10,0,0,1-10-10V3294Z" transform="translate(-375 -3294)"/>
                                     </svg>
                                 </div>
                             </div>
