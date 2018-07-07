@@ -51,7 +51,7 @@ module.exports = {
         },
         strapi: {
           hostUrl:"https://shreemaycommunity.org",
-          port:"80"
+          port:"443"
         }
     },
   },

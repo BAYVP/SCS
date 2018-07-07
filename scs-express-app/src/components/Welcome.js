@@ -72,7 +72,7 @@ class Welcome extends Component {
                                 </div>
                                 <div className="xs-item-content">
                                     <ul className="xs-simple-tag xs-mb-20">
-                                        <li><a href="">humanitarian</a></li>
+                                        <li><a>humanitarian</a></li>
                                     </ul>
                                     <p className="xs-post-title xs-mb-60">Humanitarian activities with blood and bone marrow drives, flu clinics, health fairs, food drives etc.</p>            
                                     <span className="xs-separetor"></span>
@@ -87,7 +87,7 @@ class Welcome extends Component {
                                 </div>
                                 <div className="xs-item-content">
                                     <ul className="xs-simple-tag xs-mb-20">
-                                        <li><a href="">Cultural & Social</a></li>
+                                        <li><a>Cultural & Social</a></li>
                                     </ul>
                                     <p className="xs-post-title xs-mb-30">Makarsankranti (KiteFlying), Holi (Festival of colors), Picnic,Raas/Garba, “Pushti Sandhya” musicalconcerts</p>
                                     <span className="xs-separetor"></span>
