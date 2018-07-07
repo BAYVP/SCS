@@ -37,8 +37,8 @@ module.exports = {
         port: getDbPort(),
       },
       strapi: {
-        hostUrl:"http://52.191.119.42",
-        port:"80"
+        hostUrl:"https://shreemaycommunity.org",
+        port:"443"
       }
     },
     production: {
