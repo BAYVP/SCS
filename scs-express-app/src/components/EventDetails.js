@@ -16,7 +16,7 @@ class EventDetails  extends Component {
     componentDidMount() {
         const eventId = this.props.match.params.id;
        // console.log("*** Event id", this.props.match.params.id)
-		axios.get(`${url}/events?ID=${eventId}`)
+		axios.get(`${url}/scs/events?ID=${eventId}`)
 			.then(res => {
 				const eventDetail = res.data[0];
                 this.setState({ eventDetail })
