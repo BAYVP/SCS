@@ -41,7 +41,7 @@ class EventDetails  extends Component {
             eventDescription = this.state.eventDetail.Description.split('\n').map((item, i) => <p key={i}>{item}</p>);
         }
         if(!_.isEmpty(this.state.eventDetail.Images)) {
-            imageUrl = `${url}/${this.state.eventDetail.Images.url}`;
+            imageUrl = `${url}/scs/${this.state.eventDetail.Images.url}`;
         }
         
         const dateCountDownDiv = (dateCountDownStr["days"] > 0 && dateCountDownStr["hours"] > 0)
