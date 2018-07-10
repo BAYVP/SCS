@@ -20,7 +20,7 @@ class EventCard extends Component {
 
 
         if(!_.isEmpty(this.props.event.Images)) {
-            imageUrl = `${url}/scs/${this.props.event.Images.url}`
+            imageUrl = `${url}/${this.props.event.Images.url}`
         }
         
         if(!_.isEmpty(this.props.event.StartDate)) {
