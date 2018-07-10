@@ -29,17 +29,15 @@ class About extends Component {
 		                <div className="row">
                             <div className="col-lg-8 content-center">
                                 <div className="xs-video-popup-wraper">
-                                    <img src={videoImg} alt="" />
-                                    <div className="xs-video-popup-content">
-                                        <a href="https://www.youtube.com/watch?v=yjMiuVDwnCc&feature=youtu.be" className="xs-video-popup xs-round-btn">
-                                            <i className="fa fa-play"></i>
-                                        </a>
+                                    <div className="embed-responsive embed-responsive-21by9">
+                                        <iframe className="embed-responsive-item" src="https://youtube.com/embed/yjMiuVDwnCc" allowFullScreen></iframe>
                                     </div>
-                                </div>
-	            		    </div>
-    		            </div>
-	                </div>
-                </div>	
+                                </div>    
+                            </div>
+	            		</div>
+    		        </div>
+	            </div>
+                
 	            <section className="xs-content-section-padding">
                     <div className="container">
                         <div className="row">
