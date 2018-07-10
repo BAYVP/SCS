@@ -16,7 +16,7 @@ class EventDetails  extends Component {
     componentDidMount() {
         const eventId = this.props.match.params.id;
        // console.log("*** Event id", this.props.match.params.id)
-		axios.get(`${url}/scs/events?ID=${eventId}`)
+		axios.get(`${url}/events?ID=${eventId}`)
 			.then(res => {
 				const eventDetail = res.data[0];
                 this.setState({ eventDetail })
@@ -41,7 +41,7 @@ class EventDetails  extends Component {
             eventDescription = this.state.eventDetail.Description.split('\n').map((item, i) => <p key={i}>{item}</p>);
         }
         if(!_.isEmpty(this.state.eventDetail.Images)) {
-            imageUrl = `${url}/scs/${this.state.eventDetail.Images.url}`;
+            imageUrl = `${url}/${this.state.eventDetail.Images.url}`;
         }
         
         const dateCountDownDiv = (dateCountDownStr["days"] > 0 && dateCountDownStr["hours"] > 0)

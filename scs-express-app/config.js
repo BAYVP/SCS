@@ -50,7 +50,7 @@ module.exports = {
           strapiServerUrl:""
         },
         strapi: {
-          hostUrl:"https://strapi.shreemaycommunity.org",
+          hostUrl:"https://scsapi.shreemaycommunity.org",
           port:"443"
         }
     },
