@@ -23,7 +23,6 @@ class Footer extends Component {
 								<h3 className="widget-title">Connect with us on social media</h3>
 									<ul className="xs-social-list">
 										<li><a href="https://www.facebook.com/bayvpsvm" target="_blank"><i className="fa fa-facebook"></i></a></li>
-										<li><a href="" target="_blank"><i className="fa fa-google-plus"></i></a></li>
 									</ul>
 								</div>
 							</div>
