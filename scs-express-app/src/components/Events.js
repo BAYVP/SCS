@@ -11,7 +11,7 @@ import config from '../../config';
 import eventType from './EventType';
 
 const url = config.getStrapiUrl()
-const eventsUri="events?_sort=EndDate:desc"
+const eventsUri="events?_sort=EndDate:asc"
 
 class Events extends Component {
 

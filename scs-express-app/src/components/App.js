@@ -8,6 +8,7 @@ import Chapters from './Chapters';
 import Svm from './Svm';
 import Events from './Events';
 import EventDetails from './EventDetails';
+import DonateNow from './DonateNow';
 //import Contact from './Contact';
 //import SvmEnrollmentAndPolicy from './SvmEnrollmentAndPolicy';
 import SvmEvents from './SvmEvents';
@@ -27,18 +28,20 @@ class App extends Component {
         return (
             <BrowserRouter>
             <div>  
-            <header className="xs-header header-transparent">
+            <header className="xs-header header-transparent xs-box">
                 <div className="container">
                     <nav className="xs-menus">
                         <div className="nav-header">
-                            <div className="nav-toggle"></div>
-                            <Link to="/welcome" className="nav-logo"><img src={logo} alt=""/></Link>
+				            <div className="nav-toggle"></div>
+                                <Link to="/welcome" className="nav-logo"><img src={logo} alt=""/></Link>
+			                </div>
+                        <div className="nav-menus-wrapper row">
+                            <div className="xs-logo-wraper col-lg-2 col-xl-2 xs-padding-0">
+                            <div className="">
+                                <Link to="/welcome" className="nav-brand"><img src={logo} alt=""/></Link>
                             </div>
-                            <div className="nav-menus-wrapper row">
-                            <div className="xs-logo-wraper col-lg-2 xs-padding-0">
-                            <Link to="/welcome" className="nav-brand"><img src={logo} alt=""/></Link>
                             </div>
-                            <div className="col-lg-7">
+                            <div className="col-lg-10 col-xl-7">
                                 <ul className="nav-menu">
                                 <li><Link to="/welcome">Home</Link></li>
                                 <li><Link to="/events">Events</Link></li>
@@ -51,10 +54,10 @@ class App extends Component {
                                 <li><Link to="/about">About</Link></li>
                                 </ul>
                             </div>
-                            <div className="xs-navs-button d-flex-center-end col-lg-3">
-                                <a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N66FMVUXQE65G" className="btn btn-primary">
-                                <span className="badge"><i className="fa fa-heart"></i></span> Donate Now
-                                </a>
+                            <div className="xs-navs-button d-flex-center-end col-lg-3 col-xl-3 d-block d-lg-none d-xl-block">
+                            <div className="">
+                                <Link to="/donate" className="btn btn-primary"><span className="badge"><i className="fa fa-heart"></i></span> Donate Now</Link>
+                            </div>
                             </div>
                         </div>
                     </nav>
@@ -69,6 +72,8 @@ class App extends Component {
                 <Route exact path="/events/:id" component={EventDetails} />
                 <Route exact path="/chapters" component={Chapters} />
                 <Route exact path="/about" component={About} />
+                <Route exact path="/donate" component={DonateNow} />
+                
                 
             </Switch>
             <Footer />
