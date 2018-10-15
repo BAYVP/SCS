@@ -112,36 +112,22 @@ class DonateNow extends Component {
 							</div>
 						</div>
 					</div>
-					<div className="row">
-						<div className="col-md-3">
+				</div>
+				<div className="container">
+					<section className="sutomer-logos slider">
+						<div className="slide">
 							<img className="img-responsive" alt="" src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/files/images/wmrc/VMware_logo_gry_RGB_300dpi.jpg" />
 						</div>
-						<div className="col-md-3">
+						<div className="slide">
 							<img className="img-responsive" alt="" src={require("./images/logos/oracle_clr.bmp")} />
 						</div>
-						<div className="col-md-3">
+						<div className="slide">
 							<img className="img-responsive" alt="" src={require("./images/logos/Netflix_Logo.png")} />
 						</div>
-						<div className="col-md-3">
+						<div className="slide">
 							<img className="img-responsive" alt="" src={require("./images/logos/Linkedin_Logo.png")} />
 						</div>
-					</div>
-					<div className="row">
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src={require("./images/logos/Salesforce_Logo.png")} />
-						</div>
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src={require("./images/logos/Ebay_logo.png")} />
-						</div>
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png" />
-						</div>
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src={require("./images/logos/Intuit_Logo.png")} />
-						</div>
-
-						
-					</div>
+					</section>
 				</div>
 			</section>
 			</main>
