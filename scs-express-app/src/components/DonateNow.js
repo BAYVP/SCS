@@ -113,21 +113,23 @@ class DonateNow extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="container">
-					<section className="sutomer-logos slider">
-						<div className="slide">
-							<img className="img-responsive" alt="" src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/files/images/wmrc/VMware_logo_gry_RGB_300dpi.jpg" />
+				<div className="col-md-6 offset-md-3">
+					<div className="carousel slide text-center" id="myCarousel" data-ride="carousel">
+						<div className="carousel-inner">
+							<div className="carousel-item">
+								<div className="col-md-4"><img className="img-responsive" alt="" src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/files/images/wmrc/VMware_logo_gry_RGB_300dpi.jpg" /></div>
+							</div>
+							<div className="carousel-item">
+								<div className="col-md-4"><img className="img-responsive" alt="" src={require("./images/logos/oracle_clr.bmp")} /></div>
+							</div>
+							<div className="carousel-item">
+								<div className="col-md-4"><img className="img-responsive" alt="" src={require("./images/logos/Netflix_Logo.png")} /></div>
+							</div>
+							<div className="carousel-item">
+								<div className="col-md-4"><img className="img-responsive" alt="" src={require("./images/logos/Linkedin_Logo.png")} /></div>
+							</div>
 						</div>
-						<div className="slide">
-							<img className="img-responsive" alt="" src={require("./images/logos/oracle_clr.bmp")} />
-						</div>
-						<div className="slide">
-							<img className="img-responsive" alt="" src={require("./images/logos/Netflix_Logo.png")} />
-						</div>
-						<div className="slide">
-							<img className="img-responsive" alt="" src={require("./images/logos/Linkedin_Logo.png")} />
-						</div>
-					</section>
+					</div>
 				</div>
 			</section>
 			</main>
