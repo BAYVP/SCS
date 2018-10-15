@@ -93,9 +93,9 @@ class DonateNow extends Component {
 									<h3 className="xs-title">Employer Matching</h3>
 									<p className="small">An easy way to <b>double</b> your contribution is through employee giving programs. Many corporations match employee donations (or the tax deductible component of your membership) to our organization. If you volunteer with us, your employer may also provide us with a grant as a way to recognize your ongoing support. </p>
 									<p className="small">If you need any support for company matching please contact us at:</p>
-									<span>info@shreemaycommunoty.com</span><br></br>
+									<span>info@shreemaycommunity.com</span><br></br>
 									<span>(408)-123-4567</span><br></br>
-									<span>EIN: 1231312312312321</span><br></br>
+									<span>EIN: 26-4772584</span><br></br>
 									
 									<p className="small"><br/>Thanks for checking to see if your company offers these programs!.</p>
 									<span className="xs-separetor v2"></span>
