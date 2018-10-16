@@ -175,6 +175,7 @@ $(document).ready(function() {
 		});
 	}
 	
+	
 
 	/*==========================================================
 			number counter and skill bar animation

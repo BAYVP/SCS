@@ -1,12 +1,24 @@
 
 import React, { Component } from 'react';
 import '../index.css';
+import Slider from "react-slick";
 import eventBackgroundImg from './images/donate_bg.jpg';
 
 
 class DonateNow extends Component {
 
   render() {
+	var settings = {
+		dots: true,
+		arrows: true,
+      	infinite: true,
+		slidesToShow: 4,
+		slidesToScroll:2,
+		autoplay: true,
+      	speed: 2000,
+      	autoplaySpeed: 2000,
+      	cssEase: "linear"
+	  };
     return (
         <div>
 			<section className="xs-banner-inner-section parallax-window" style={{backgroundImage: `url(${eventBackgroundImg})`}}>
@@ -93,9 +105,9 @@ class DonateNow extends Component {
 									<h3 className="xs-title">Employer Matching</h3>
 									<p className="small">An easy way to <b>double</b> your contribution is through employee giving programs. Many corporations match employee donations (or the tax deductible component of your membership) to our organization. If you volunteer with us, your employer may also provide us with a grant as a way to recognize your ongoing support. </p>
 									<p className="small">If you need any support for company matching please contact us at:</p>
-									<span>info@shreemaycommunoty.com</span><br></br>
+									<span>info@shreemaycommunity.com</span><br></br>
 									<span>(408)-123-4567</span><br></br>
-									<span>EIN: 1231312312312321</span><br></br>
+									<span>EIN: 26-4772584</span><br></br>
 									
 									<p className="small"><br/>Thanks for checking to see if your company offers these programs!.</p>
 									<span className="xs-separetor v2"></span>
@@ -112,36 +124,19 @@ class DonateNow extends Component {
 							</div>
 						</div>
 					</div>
-					<div className="row">
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/files/images/wmrc/VMware_logo_gry_RGB_300dpi.jpg" />
-						</div>
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src={require("./images/logos/oracle_clr.bmp")} />
-						</div>
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src={require("./images/logos/Netflix_Logo.png")} />
-						</div>
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src={require("./images/logos/Linkedin_Logo.png")} />
-						</div>
-					</div>
-					<div className="row">
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src={require("./images/logos/Salesforce_Logo.png")} />
-						</div>
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src={require("./images/logos/Ebay_logo.png")} />
-						</div>
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png" />
-						</div>
-						<div className="col-md-3">
-							<img className="img-responsive" alt="" src={require("./images/logos/Intuit_Logo.png")} />
-						</div>
-
-						
-					</div>
+					<Slider {...settings}>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Google_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Cisco_Logo.png")} /></div>
+						<div><img className="img-responsive " alt="" src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/files/images/wmrc/VMware_logo_gry_RGB_300dpi.jpg" /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/oracle_clr.bmp")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Netflix_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Linkedin_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Intuit_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Apple_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Ebay_logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Salesforce_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Netapp_Logo.gif")} /></div>
+					</Slider>
 				</div>
 			</section>
 			</main>
