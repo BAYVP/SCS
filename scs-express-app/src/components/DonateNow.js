@@ -1,12 +1,24 @@
 
 import React, { Component } from 'react';
 import '../index.css';
+import Slider from "react-slick";
 import eventBackgroundImg from './images/donate_bg.jpg';
 
 
 class DonateNow extends Component {
 
   render() {
+	var settings = {
+		dots: true,
+		arrows: true,
+      	infinite: true,
+		slidesToShow: 4,
+		slidesToScroll:2,
+		autoplay: true,
+      	speed: 2000,
+      	autoplaySpeed: 2000,
+      	cssEase: "linear"
+	  };
     return (
         <div>
 			<section className="xs-banner-inner-section parallax-window" style={{backgroundImage: `url(${eventBackgroundImg})`}}>
@@ -112,24 +124,19 @@ class DonateNow extends Component {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="col-md-6 offset-md-3">
-					<div className="carousel slide text-center" id="myCarousel" data-ride="carousel">
-						<div className="carousel-inner">
-							<div className="carousel-item">
-								<div className="col-md-4"><img className="img-responsive" alt="" src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/files/images/wmrc/VMware_logo_gry_RGB_300dpi.jpg" /></div>
-							</div>
-							<div className="carousel-item">
-								<div className="col-md-4"><img className="img-responsive" alt="" src={require("./images/logos/oracle_clr.bmp")} /></div>
-							</div>
-							<div className="carousel-item">
-								<div className="col-md-4"><img className="img-responsive" alt="" src={require("./images/logos/Netflix_Logo.png")} /></div>
-							</div>
-							<div className="carousel-item">
-								<div className="col-md-4"><img className="img-responsive" alt="" src={require("./images/logos/Linkedin_Logo.png")} /></div>
-							</div>
-						</div>
-					</div>
+					<Slider {...settings}>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Google_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Cisco_Logo.png")} /></div>
+						<div><img className="img-responsive " alt="" src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/files/images/wmrc/VMware_logo_gry_RGB_300dpi.jpg" /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/oracle_clr.bmp")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Netflix_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Linkedin_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Intuit_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Apple_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Ebay_logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Salesforce_Logo.png")} /></div>
+						<div><img className="img-responsive" alt="" src={require("./images/logos/Netapp_Logo.gif")} /></div>
+					</Slider>
 				</div>
 			</section>
 			</main>
