@@ -24,20 +24,7 @@ class About extends Component {
 	            </div>
             </section>
             <main className="xs-main">
-	            <div className="xs-video-popup-section">
-	                <div className="container">
-		                <div className="row">
-                            <div className="col-lg-8 content-center">
-                                <div className="xs-video-popup-wraper">
-                                    <div className="embed-responsive embed-responsive-21by9">
-                                        <iframe className="embed-responsive-item" src="https://youtube.com/embed/yjMiuVDwnCc" allowFullScreen></iframe>
-                                    </div>
-                                </div>    
-                            </div>
-	            		</div>
-    		        </div>
-	            </div>
-                
+	            
 	            <section className="xs-content-section-padding">
                     <div className="container">
                         <div className="row">
