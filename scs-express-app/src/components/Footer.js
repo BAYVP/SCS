@@ -20,10 +20,6 @@ class Footer extends Component {
 								</div>
 								<div className="col-lg-6 col-md-6 footer-widget">
 								<div className="xs-feature-box-content">
-								<h3 className="widget-title">Connect with us on social media</h3>
-									<ul className="xs-social-list">
-										<li><a href="https://www.facebook.com/bayvpsvm" target="_blank"><i className="fa fa-facebook"></i></a></li>
-									</ul>
 								</div>
 							</div>
 							</div>

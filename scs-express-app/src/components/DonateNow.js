@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import '../index.css';
 import Slider from "react-slick";
 import eventBackgroundImg from './images/donate_bg.jpg';
+import donateImg from './images/donate.png';
 
 
 class DonateNow extends Component {
@@ -26,10 +27,7 @@ class DonateNow extends Component {
 				<div className="container">
 					<div className="color-white xs-inner-banner-content">
 						<h2>Donate Now</h2>
-						<p>Need content here for donate now page.</p>
-						<ul className="xs-breadcumb">
-							<li className="badge badge-pill badge-primary"><a href="index.html" className="color-white"> Home /</a> Donate</li>
-						</ul>
+						<p>Shreemay Community Services seeks the support of foundations, corporations and individuals interested to serve the wider community keeping the neediest , the sick, poor, seniors and youth in mind and promoting activities that contribute to their well being such as through humanitarian and community efforts.</p>
 					</div>
 				</div>
 			</section>
@@ -68,7 +66,7 @@ class DonateNow extends Component {
 					<div className="row">
 						<div className="col-lg-6">
 							<div className="xs-donation-form-images">
-								<img src="assets/images/family.jpg" className="img-responsive" alt="Family Images"></img>
+								<img src={donateImg} className="img-responsive" alt="Family Images"></img>
 							</div>
 						</div>
 						<div className="col-lg-6">
@@ -104,7 +102,13 @@ class DonateNow extends Component {
 								<div className="xs-heading xs-mb-30">
 									<h3 className="xs-title">Employer Matching</h3>
 									<p className="small">An easy way to <b>double</b> your contribution is through employee giving programs. Many corporations match employee donations (or the tax deductible component of your membership) to our organization. If you volunteer with us, your employer may also provide us with a grant as a way to recognize your ongoing support. </p>
-									<p className="small">If you need any support for company matching please contact us at:</p>
+									<div className="xs-navs-button d-flex-center-end col-lg-3 col-xl-3 d-block d-lg-none d-xl-block">
+                            			<div className="">
+											<a class="btn btn-primary" target="_blank" href="https://doublethedonation.com/cgarc"><span class="badge"></span> Employer Matching Wizard</a>
+                            			</div>
+                            		</div>
+									<br></br>
+									<p className="small">If you need any support for <b>company matching</b> please contact us at:</p>
 									<span>info@shreemaycommunity.com</span><br></br>
 									<span>(408)-123-4567</span><br></br>
 									<span>EIN: 26-4772584</span><br></br>
