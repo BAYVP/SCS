@@ -109,8 +109,8 @@ class DonateNow extends Component {
                             		</div>
 									<br></br>
 									<p className="small">If you need any support for <b>company matching</b> please contact us at:</p>
-									<span>info@shreemaycommunity.com</span><br></br>
-									<span>(408)-123-4567</span><br></br>
+									<span>jayshree.bayvp@gmail.com</span><br></br>
+									<span>510-468-3413 or 510-490-6247</span><br></br>
 									<span>EIN: 26-4772584</span><br></br>
 									
 									<p className="small"><br/>Thanks for checking to see if your company offers these programs!.</p>
