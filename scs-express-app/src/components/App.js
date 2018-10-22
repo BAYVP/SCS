@@ -52,13 +52,10 @@ class App extends Component {
                                 </li>
                                 <li><Link to="/chapters">Chapters</Link></li>
                                 <li><Link to="/about">About</Link></li>
+                                <li><Link to="/donate">Donate</Link></li>
                                 </ul>
                             </div>
-                            <div className="xs-navs-button d-flex-center-end col-lg-3 col-xl-3 d-block d-lg-none d-xl-block">
-                            <div className="">
-                                <Link to="/donate" className="btn btn-primary"><span className="badge"><i className="fa fa-heart"></i></span> Donate Now</Link>
-                            </div>
-                            </div>
+                            
                         </div>
                     </nav>
                 </div>
