@@ -9,6 +9,7 @@ import Svm from './Svm';
 import Events from './Events';
 import EventDetails from './EventDetails';
 import DonateNow from './DonateNow';
+import SingleBlog from './SingleBlog';
 //import Contact from './Contact';
 //import SvmEnrollmentAndPolicy from './SvmEnrollmentAndPolicy';
 import SvmEvents from './SvmEvents';
@@ -41,7 +42,7 @@ class App extends Component {
                                 <Link to="/welcome" className="nav-brand"><img src={logo} alt=""/></Link>
                             </div>
                             </div>
-                            <div className="col-lg-10 col-xl-7">
+                            <div className="col-lg-10 col-xl-9">
                                 <ul className="nav-menu">
                                 <li><Link to="/welcome">Home</Link></li>
                                 <li><Link to="/events">Events</Link></li>
@@ -52,6 +53,7 @@ class App extends Component {
                                 </li>
                                 <li><Link to="/chapters">Chapters</Link></li>
                                 <li><Link to="/about">About</Link></li>
+                                <li><Link to="/blog">Blog</Link></li>
                                 <li><Link to="/donate">Donate</Link></li>
                                 </ul>
                             </div>
@@ -70,8 +72,7 @@ class App extends Component {
                 <Route exact path="/chapters" component={Chapters} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/donate" component={DonateNow} />
-                
-                
+                <Route exact path="/blog" component={SingleBlog} />
             </Switch>
             <Footer />
             </div>
