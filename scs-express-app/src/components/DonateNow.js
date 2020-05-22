@@ -86,8 +86,8 @@ class DonateNow extends Component {
 									<h2 className="xs-title">Send a check</h2>
 									<p className="small">If you want you can also send us your donations via check to following:</p>
 									<span>Shreemay Community Services</span><br></br>
-									<span>25 Corning Avenue</span><br></br>
-									<span>Milpitas, CA 95035</span>
+									<span>175 Nortech Parkway</span><br></br>
+									<span>San Jose, CA 95134</span>
 								</div>
 							</div>
 						</div>

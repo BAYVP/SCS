@@ -19,7 +19,7 @@ RUN yum -y install python-devel; yum -y clean all
 RUN yum -y install gcc-c++; yum -y clean all
 
 # Install nodejs, npm
-RUN wget https://rpm.nodesource.com/setup_4.x -O - | bash -
+RUN curl -sL https://rpm.nodesource.com/setup_13.x | bash -
 RUN yum install -y nodejs npm
 
 EXPOSE 3000
