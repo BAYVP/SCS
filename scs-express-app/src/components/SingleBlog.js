@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import blogHeaderBackgroundImg from "./images/blog_details_header_bg.jpg";
-import blogBackgroundImg from "./images/blog-bg.jpg";
+
 
 class SingleBlog extends Component {
   render() {

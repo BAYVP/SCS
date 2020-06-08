@@ -13,6 +13,7 @@ import SingleBlog from './SingleBlog';
 //import Contact from './Contact';
 //import SvmEnrollmentAndPolicy from './SvmEnrollmentAndPolicy';
 import SvmEvents from './SvmEvents';
+import SvmLearn from './SvmLearn';
 //import SvmCurriculam from './SvmCurriculam';
 import Footer from './Footer';
 import '../index.css';
@@ -48,6 +49,7 @@ class App extends Component {
                                 <li><Link to="/events">Events</Link></li>
                                 <li><Link to="/svm">Vidya Mandir</Link>
                                     <ul className="nav-dropdown">
+                                        <li><Link to="/svm/learn">Learn</Link></li>
                                         <li><Link to="/svm/svmEvents">SVM Events</Link></li>
                                     </ul>
                                 </li>
@@ -68,6 +70,7 @@ class App extends Component {
                 <Route exact path="/events" component={Events} />
                 <Route exact path="/svm" component={Svm} />
                 <Route exact path="/svm/svmEvents" component={SvmEvents} />
+                <Route exact path="/svm/learn" component={SvmLearn} />
                 <Route exact path="/events/:id" component={EventDetails} />
                 <Route exact path="/chapters" component={Chapters} />
                 <Route exact path="/about" component={About} />

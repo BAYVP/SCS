@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import videoImg from './images/video_img.jpg';
-import team1Img from './images/team_1.png';
 import team2Img from './images/team_2.png';
 import team3Img from './images/team_3.png';
 import team4Img from './images/team_4.png';
 import team5Img from './images/team_5.png';
 import team6Img from './images/team_6.png';
 import team7Img from './images/team_7.png';
-import team8Img from './images/team_8.png';
 import aboutBackgroundImage from './images/about_bg.png';
 
 class About extends Component {
