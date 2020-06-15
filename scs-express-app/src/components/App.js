@@ -49,8 +49,8 @@ class App extends Component {
                                 <li><Link to="/events">Events</Link></li>
                                 <li><Link to="/svm">Vidya Mandir</Link>
                                     <ul className="nav-dropdown">
-                                        <li><Link to="/svm/learn">Learn</Link></li>
-                                        <li><Link to="/svm/svmEvents">SVM Events</Link></li>
+                                        <li><Link to="/svmLearn">Learn</Link></li>
+                                        <li><Link to="/svmEvents">SVM Events</Link></li>
                                     </ul>
                                 </li>
                                 <li><Link to="/chapters">Chapters</Link></li>
@@ -69,8 +69,8 @@ class App extends Component {
                 <Route exact path="/welcome" component={Welcome} />
                 <Route exact path="/events" component={Events} />
                 <Route exact path="/svm" component={Svm} />
-                <Route exact path="/svm/svmEvents" component={SvmEvents} />
-                <Route exact path="/svm/learn" component={SvmLearn} />
+                <Route exact path="/svmEvents" component={SvmEvents} />
+                <Route exact path="/svmLearn" component={SvmLearn} />
                 <Route exact path="/events/:id" component={EventDetails} />
                 <Route exact path="/chapters" component={Chapters} />
                 <Route exact path="/about" component={About} />
