@@ -28,7 +28,7 @@
     "react-tiny-link": "^3.4.0",
     "reactstrap": "^6.0.1",
     "slick-carousel": "^1.8.1",
-    "underscore": "^1.9.0"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "titatoggle": "^2.1.2"
