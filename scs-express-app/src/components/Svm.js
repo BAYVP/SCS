@@ -44,7 +44,7 @@ class Svm extends Component {
                             <div className="md-archive-content">
                                 <div className="xs-heading row xs-mb-60">
                                     <div className="col-md-12 col-xl-12">
-                                        <h4 className="xs-title">Classes Offered (2017-2018)</h4>
+                                        <h4 className="xs-title">Classes Offered</h4>
                                     </div>
                                 </div>
                                 <ul className="xs-unorder-list arrow">
