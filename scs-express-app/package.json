@@ -11,7 +11,7 @@
     "jquery": "^3.3.1",
     "jsonfile": "^4.0.0",
     "moment": "^2.22.1",
-    "moment-timezone": "^0.5.17",
+    "moment-timezone": "^0.5.35",
     "mongoose": "^5.0.1",
     "morgan": "^1.9.0",
     "prop-types": "^15.6.1",
